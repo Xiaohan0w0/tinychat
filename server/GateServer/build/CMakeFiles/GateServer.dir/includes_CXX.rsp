@@ -1,0 +1,1 @@
+-I"E:/cpp_project/Tiny-Chat/server/GateServer/include" -I"E:/cpp_project/Tiny-Chat/server/GateServer/proto" -I"E:/cpp_project/Tiny-Chat/server/GateServer/build/proto_generated" -I"E:/cppsoft/boost_1_90_0/installed/include/boost-1_90" -I"E:/cppsoft/jsoncpp-1.9.7/installed/include" -IE:/cppsoft/grpc_v1.50/installed/include

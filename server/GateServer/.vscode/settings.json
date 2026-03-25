@@ -1,0 +1,14 @@
+{
+    "cmake.generator": "MinGW Makefiles",
+    "cmake.configureArgs": [
+        "-DCMAKE_C_COMPILER=gcc",
+        "-DCMAKE_CXX_COMPILER=g++"
+    ],
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "files.associations": {
+        "*.h": "cpp",
+        "*.cpp": "cpp"
+    },
+    "editor.formatOnSave": false,
+    "C_Cpp.intelliSenseEngine": "default"
+}

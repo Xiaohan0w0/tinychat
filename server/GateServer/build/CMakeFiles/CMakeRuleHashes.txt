@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+d7d6901200603cf06dade5a9f71fdf9e CMakeFiles/generate_proto
+04b558800dfd46b9d4752bea1472a41c proto_generated/message.pb.cc
