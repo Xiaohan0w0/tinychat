@@ -24,7 +24,7 @@ public:
         request.set_email(email);
 
         Status status = stub_->GetVerifyCode(&context, request, &response);
-        if (!status.ok())
+        if (status.ok())
         {
             return response;
         }
@@ -43,7 +43,7 @@ private:
         std::shared_ptr<Channel> channel=grpc::CreateChannel("0.0.0.0:50051",grpc::InsecureChannelCredentials());
         stub_=VerifyService::NewStub(channel);
     }
-    ~VerifyGrpcClient();
+    ~VerifyGrpcClient()=default;
     // stub客户端存根，封装了 RPC 调用能力，用于调用服务端的方法，传递消息，依赖channel提供网络连接
     // 好比channel是电话线路，stub是电话听筒
     std::unique_ptr<VerifyService::Stub> stub_;
