@@ -56,10 +56,10 @@ RM = E:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\cpp_project\Tiny-Chat\server\GateServer
+CMAKE_SOURCE_DIR = E:\cpp_project\TinyChat\server\GateServer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\cpp_project\Tiny-Chat\server\GateServer\build
+CMAKE_BINARY_DIR = E:\cpp_project\TinyChat\server\GateServer\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\cpp_project\Tiny-Chat\server\GateServer\build\CMakeFiles E:\cpp_project\Tiny-Chat\server\GateServer\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles E:\cpp_project\TinyChat\server\GateServer\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\cpp_project\Tiny-Chat\server\GateServer\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -141,6 +141,30 @@ GateServer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/build
 .PHONY : GateServer/fast
 
+proto_generated/message.grpc.pb.obj: proto_generated/message.grpc.pb.cc.obj
+.PHONY : proto_generated/message.grpc.pb.obj
+
+# target to build an object file
+proto_generated/message.grpc.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.obj
+.PHONY : proto_generated/message.grpc.pb.cc.obj
+
+proto_generated/message.grpc.pb.i: proto_generated/message.grpc.pb.cc.i
+.PHONY : proto_generated/message.grpc.pb.i
+
+# target to preprocess a source file
+proto_generated/message.grpc.pb.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.i
+.PHONY : proto_generated/message.grpc.pb.cc.i
+
+proto_generated/message.grpc.pb.s: proto_generated/message.grpc.pb.cc.s
+.PHONY : proto_generated/message.grpc.pb.s
+
+# target to generate assembly for a file
+proto_generated/message.grpc.pb.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.s
+.PHONY : proto_generated/message.grpc.pb.cc.s
+
 proto_generated/message.pb.obj: proto_generated/message.pb.cc.obj
 .PHONY : proto_generated/message.pb.obj
 
@@ -188,6 +212,30 @@ src/CServer.s: src/CServer.cpp.s
 src/CServer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/CServer.cpp.s
 .PHONY : src/CServer.cpp.s
+
+src/ConfigMgr.obj: src/ConfigMgr.cpp.obj
+.PHONY : src/ConfigMgr.obj
+
+# target to build an object file
+src/ConfigMgr.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/ConfigMgr.cpp.obj
+.PHONY : src/ConfigMgr.cpp.obj
+
+src/ConfigMgr.i: src/ConfigMgr.cpp.i
+.PHONY : src/ConfigMgr.i
+
+# target to preprocess a source file
+src/ConfigMgr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/ConfigMgr.cpp.i
+.PHONY : src/ConfigMgr.cpp.i
+
+src/ConfigMgr.s: src/ConfigMgr.cpp.s
+.PHONY : src/ConfigMgr.s
+
+# target to generate assembly for a file
+src/ConfigMgr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/ConfigMgr.cpp.s
+.PHONY : src/ConfigMgr.cpp.s
 
 src/HttpConnection.obj: src/HttpConnection.cpp.obj
 .PHONY : src/HttpConnection.obj
@@ -271,12 +319,18 @@ help:
 	@echo ... rebuild_cache
 	@echo ... generate_proto
 	@echo ... GateServer
+	@echo ... proto_generated/message.grpc.pb.obj
+	@echo ... proto_generated/message.grpc.pb.i
+	@echo ... proto_generated/message.grpc.pb.s
 	@echo ... proto_generated/message.pb.obj
 	@echo ... proto_generated/message.pb.i
 	@echo ... proto_generated/message.pb.s
 	@echo ... src/CServer.obj
 	@echo ... src/CServer.i
 	@echo ... src/CServer.s
+	@echo ... src/ConfigMgr.obj
+	@echo ... src/ConfigMgr.i
+	@echo ... src/ConfigMgr.s
 	@echo ... src/HttpConnection.obj
 	@echo ... src/HttpConnection.i
 	@echo ... src/HttpConnection.s

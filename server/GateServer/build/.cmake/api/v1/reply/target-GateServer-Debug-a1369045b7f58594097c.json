@@ -1,0 +1,579 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe"
+		},
+		{
+			"path" : "E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"add_dependencies",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 55,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 72,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 58,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 61,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++20"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "E:/cpp_project/TinyChat/server/GateServer/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "E:/cpp_project/TinyChat/server/GateServer/proto"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "E:/cpp_project/TinyChat/server/GateServer/build/proto_generated"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "E:/cppsoft/boost_1_90_0/installed/include/boost-1_90"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "E:/cppsoft/jsoncpp-1.9.7/installed/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "E:/cppsoft/grpc_v1.50/installed/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "generate_proto::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "GateServer::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\jsoncpp-1.9.7\\installed\\lib\\libjsoncpp.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\boost_1_90_0\\installed\\lib\\libboost_filesystem-mgw13-mt-x64-1_90.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\boost_1_90_0\\installed\\lib\\libboost_atomic-mgw13-mt-x64-1_90.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lws2_32",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lmswsock",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libprotobuf.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libgpr.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libgrpc.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libgrpc++.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libgrpc++_reflection.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libaddress_sorting.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libcares.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libzlibstatic.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libupb.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libssl.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libcrypto.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libre2.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_statusor.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_status.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_flags.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_flags_internal.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_flags_marshalling.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_flags_parse.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_flags_program_name.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_flags_usage.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_flags_usage_internal.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_flags_config.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_synchronization.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_graphcycles_internal.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_time.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_time_zone.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_civil_time.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_cord.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_hash.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_hashtablez_sampler.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_raw_hash_set.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_strings.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_strings_internal.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_str_format_internal.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_symbolize.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_stacktrace.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_debugging_internal.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_demangle_internal.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_examine_stack.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_failure_signal_handler.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_leak_check.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_scoped_set_env.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_random_distributions.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_random_internal_distribution_test_util.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_random_internal_pool_urbg.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_random_internal_randen.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_random_internal_randen_hwaes.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_random_internal_randen_hwaes_impl.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_random_internal_randen_slow.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_random_internal_seed_material.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_random_seed_gen_exception.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_random_seed_sequences.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_periodic_sampler.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_city.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_base.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_spinlock_wait.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_malloc_internal.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_raw_logging_internal.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_log_severity.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_throw_delegate.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_int128.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_exponential_biased.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_bad_any_cast_impl.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_bad_optional_access.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\cppsoft\\grpc_v1.50\\installed\\lib\\libabsl_bad_variant_access.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lDbgHelp",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "GateServer",
+	"nameOnDisk" : "GateServer.exe",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				7
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/CServer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/ConfigMgr.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/HttpConnection.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/LogicSystem.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/proto_generated/message.pb.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/proto_generated/message.grpc.pb.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/proto_generated/message.pb.cc.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "EXECUTABLE"
+}

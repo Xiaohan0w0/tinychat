@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 project(GateServer)
 
-set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
@@ -30,16 +30,18 @@ foreach(PROTO_FILE ${PROTO_FILES})
     set(PROTO_OUT_H  ${PROTO_OUT_DIR}/${PROTO_NAME}.pb.h)
 
     add_custom_command(
-        OUTPUT ${PROTO_OUT_CC} ${PROTO_OUT_H}
-        COMMAND E:/cppsoft/grpc_v1.50/installed/bin/protoc.exe
-            --proto_path=${PROTO_DIR}
-            --cpp_out=${PROTO_OUT_DIR}
-            ${PROTO_FILE}
-        DEPENDS ${PROTO_FILE}
-        COMMENT "Generating ${PROTO_NAME}.pb.cc and ${PROTO_NAME}.pb.h"
-    )
+    OUTPUT ${PROTO_OUT_CC} ${PROTO_OUT_H} ${PROTO_OUT_DIR}/${PROTO_NAME}.grpc.pb.cc ${PROTO_OUT_DIR}/${PROTO_NAME}.grpc.pb.h
+    COMMAND E:/cppsoft/grpc_v1.50/installed/bin/protoc.exe
+        --proto_path=${PROTO_DIR}
+        --cpp_out=${PROTO_OUT_DIR}
+        --grpc_out=${PROTO_OUT_DIR}
+        --plugin=protoc-gen-grpc=E:/cppsoft/grpc_v1.50/installed/bin/grpc_cpp_plugin.exe
+        ${PROTO_FILE}
+    DEPENDS ${PROTO_FILE}
+    COMMENT "Generating ${PROTO_NAME}.pb.cc, .pb.h, .grpc.pb.cc and .grpc.pb.h"
+)
 
-    list(APPEND PROTO_SOURCES ${PROTO_OUT_CC})
+    list(APPEND PROTO_SOURCES ${PROTO_OUT_CC} ${PROTO_OUT_DIR}/${PROTO_NAME}.grpc.pb.cc)
 endforeach()
 
 # 创建生成源文件的虚拟目标
@@ -71,6 +73,10 @@ target_link_libraries(GateServer PRIVATE
     # json
     E:/cppsoft/jsoncpp-1.9.7/installed/lib/libjsoncpp.a
 
+    # ========== Boost ==========
+    E:/cppsoft/boost_1_90_0/installed/lib/libboost_filesystem-mgw13-mt-x64-1_90.a
+    E:/cppsoft/boost_1_90_0/installed/lib/libboost_atomic-mgw13-mt-x64-1_90.a
+
     # Windows 套接字
     ws2_32
     mswsock
@@ -90,34 +96,37 @@ target_link_libraries(GateServer PRIVATE
     E:/cppsoft/grpc_v1.50/installed/lib/libre2.a
 
     # ========== Abseil 全量库 ==========
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_bad_any_cast_impl.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_bad_optional_access.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_bad_variant_access.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_base.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_city.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_civil_time.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_cord.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_debugging_internal.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_demangle_internal.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_examine_stack.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_exponential_biased.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_failure_signal_handler.a
+    # 基础库（被依赖的放在后面）
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_statusor.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_status.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_config.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_internal.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_marshalling.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_parse.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_program_name.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_usage.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_usage_internal.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_config.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_synchronization.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_graphcycles_internal.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_time.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_time_zone.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_civil_time.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_cord.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_hash.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_hashtablez_sampler.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_int128.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_raw_hash_set.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_strings.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_strings_internal.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_str_format_internal.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_symbolize.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_stacktrace.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_debugging_internal.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_demangle_internal.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_examine_stack.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_failure_signal_handler.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_leak_check.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_log_severity.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_malloc_internal.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_periodic_sampler.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_scoped_set_env.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_distributions.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_distribution_test_util.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_pool_urbg.a
@@ -128,19 +137,20 @@ target_link_libraries(GateServer PRIVATE
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_seed_material.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_seed_gen_exception.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_seed_sequences.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_raw_hash_set.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_raw_logging_internal.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_scoped_set_env.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_periodic_sampler.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_city.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_base.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_spinlock_wait.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_stacktrace.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_status.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_strings.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_strings_internal.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_str_format_internal.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_symbolize.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_synchronization.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_malloc_internal.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_raw_logging_internal.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_log_severity.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_throw_delegate.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_time.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_time_zone.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_statusor.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_int128.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_exponential_biased.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_bad_any_cast_impl.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_bad_optional_access.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_bad_variant_access.a
+
+    # Windows 调试库 (必须在 Abseil 库之后)
+    DbgHelp
 )

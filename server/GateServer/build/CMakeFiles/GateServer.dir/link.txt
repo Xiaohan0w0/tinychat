@@ -1,3 +1,3 @@
 E:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f CMakeFiles\GateServer.dir/objects.a
 E:\Qt\Tools\mingw1310_64\bin\ar.exe qc CMakeFiles\GateServer.dir/objects.a @CMakeFiles\GateServer.dir\objects1.rsp
-E:\Qt\Tools\mingw1310_64\bin\g++.exe -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -Wl,--whole-archive CMakeFiles\GateServer.dir/objects.a -Wl,--no-whole-archive -o E:\cpp_project\Tiny-Chat\server\GateServer\bin\GateServer.exe -Wl,--out-implib,libGateServer.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\GateServer.dir\linkLibs.rsp
+E:\Qt\Tools\mingw1310_64\bin\g++.exe -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -Wl,--whole-archive CMakeFiles\GateServer.dir/objects.a -Wl,--no-whole-archive -o E:\cpp_project\TinyChat\server\GateServer\bin\GateServer.exe -Wl,--out-implib,libGateServer.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\GateServer.dir\linkLibs.rsp

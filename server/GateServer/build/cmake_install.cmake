@@ -1,4 +1,4 @@
-# Install script for directory: E:/cpp_project/Tiny-Chat/server/GateServer
+# Install script for directory: E:/cpp_project/TinyChat/server/GateServer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -52,6 +52,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "E:/cpp_project/Tiny-Chat/server/GateServer/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "E:/cpp_project/TinyChat/server/GateServer/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -1,32 +1,44 @@
 [
 {
-  "directory": "E:/cpp_project/Tiny-Chat/server/GateServer/build",
-  "command": "E:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe  @CMakeFiles/GateServer.dir/includes_CXX.rsp -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++23 -o CMakeFiles\\GateServer.dir\\src\\CServer.cpp.obj -c E:\\cpp_project\\Tiny-Chat\\server\\GateServer\\src\\CServer.cpp",
-  "file": "E:/cpp_project/Tiny-Chat/server/GateServer/src/CServer.cpp",
+  "directory": "E:/cpp_project/TinyChat/server/GateServer/build",
+  "command": "E:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe  @CMakeFiles/GateServer.dir/includes_CXX.rsp -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++20 -o CMakeFiles\\GateServer.dir\\src\\CServer.cpp.obj -c E:\\cpp_project\\TinyChat\\server\\GateServer\\src\\CServer.cpp",
+  "file": "E:/cpp_project/TinyChat/server/GateServer/src/CServer.cpp",
   "output": "CMakeFiles/GateServer.dir/src/CServer.cpp.obj"
 },
 {
-  "directory": "E:/cpp_project/Tiny-Chat/server/GateServer/build",
-  "command": "E:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe  @CMakeFiles/GateServer.dir/includes_CXX.rsp -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++23 -o CMakeFiles\\GateServer.dir\\src\\HttpConnection.cpp.obj -c E:\\cpp_project\\Tiny-Chat\\server\\GateServer\\src\\HttpConnection.cpp",
-  "file": "E:/cpp_project/Tiny-Chat/server/GateServer/src/HttpConnection.cpp",
+  "directory": "E:/cpp_project/TinyChat/server/GateServer/build",
+  "command": "E:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe  @CMakeFiles/GateServer.dir/includes_CXX.rsp -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++20 -o CMakeFiles\\GateServer.dir\\src\\ConfigMgr.cpp.obj -c E:\\cpp_project\\TinyChat\\server\\GateServer\\src\\ConfigMgr.cpp",
+  "file": "E:/cpp_project/TinyChat/server/GateServer/src/ConfigMgr.cpp",
+  "output": "CMakeFiles/GateServer.dir/src/ConfigMgr.cpp.obj"
+},
+{
+  "directory": "E:/cpp_project/TinyChat/server/GateServer/build",
+  "command": "E:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe  @CMakeFiles/GateServer.dir/includes_CXX.rsp -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++20 -o CMakeFiles\\GateServer.dir\\src\\HttpConnection.cpp.obj -c E:\\cpp_project\\TinyChat\\server\\GateServer\\src\\HttpConnection.cpp",
+  "file": "E:/cpp_project/TinyChat/server/GateServer/src/HttpConnection.cpp",
   "output": "CMakeFiles/GateServer.dir/src/HttpConnection.cpp.obj"
 },
 {
-  "directory": "E:/cpp_project/Tiny-Chat/server/GateServer/build",
-  "command": "E:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe  @CMakeFiles/GateServer.dir/includes_CXX.rsp -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++23 -o CMakeFiles\\GateServer.dir\\src\\LogicSystem.cpp.obj -c E:\\cpp_project\\Tiny-Chat\\server\\GateServer\\src\\LogicSystem.cpp",
-  "file": "E:/cpp_project/Tiny-Chat/server/GateServer/src/LogicSystem.cpp",
+  "directory": "E:/cpp_project/TinyChat/server/GateServer/build",
+  "command": "E:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe  @CMakeFiles/GateServer.dir/includes_CXX.rsp -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++20 -o CMakeFiles\\GateServer.dir\\src\\LogicSystem.cpp.obj -c E:\\cpp_project\\TinyChat\\server\\GateServer\\src\\LogicSystem.cpp",
+  "file": "E:/cpp_project/TinyChat/server/GateServer/src/LogicSystem.cpp",
   "output": "CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj"
 },
 {
-  "directory": "E:/cpp_project/Tiny-Chat/server/GateServer/build",
-  "command": "E:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe  @CMakeFiles/GateServer.dir/includes_CXX.rsp -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++23 -o CMakeFiles\\GateServer.dir\\src\\test.cpp.obj -c E:\\cpp_project\\Tiny-Chat\\server\\GateServer\\src\\test.cpp",
-  "file": "E:/cpp_project/Tiny-Chat/server/GateServer/src/test.cpp",
+  "directory": "E:/cpp_project/TinyChat/server/GateServer/build",
+  "command": "E:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe  @CMakeFiles/GateServer.dir/includes_CXX.rsp -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++20 -o CMakeFiles\\GateServer.dir\\src\\test.cpp.obj -c E:\\cpp_project\\TinyChat\\server\\GateServer\\src\\test.cpp",
+  "file": "E:/cpp_project/TinyChat/server/GateServer/src/test.cpp",
   "output": "CMakeFiles/GateServer.dir/src/test.cpp.obj"
 },
 {
-  "directory": "E:/cpp_project/Tiny-Chat/server/GateServer/build",
-  "command": "E:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe  @CMakeFiles/GateServer.dir/includes_CXX.rsp -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++23 -o CMakeFiles\\GateServer.dir\\proto_generated\\message.pb.cc.obj -c E:\\cpp_project\\Tiny-Chat\\server\\GateServer\\build\\proto_generated\\message.pb.cc",
-  "file": "E:/cpp_project/Tiny-Chat/server/GateServer/build/proto_generated/message.pb.cc",
+  "directory": "E:/cpp_project/TinyChat/server/GateServer/build",
+  "command": "E:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe  @CMakeFiles/GateServer.dir/includes_CXX.rsp -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++20 -o CMakeFiles\\GateServer.dir\\proto_generated\\message.pb.cc.obj -c E:\\cpp_project\\TinyChat\\server\\GateServer\\build\\proto_generated\\message.pb.cc",
+  "file": "E:/cpp_project/TinyChat/server/GateServer/build/proto_generated/message.pb.cc",
   "output": "CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.obj"
+},
+{
+  "directory": "E:/cpp_project/TinyChat/server/GateServer/build",
+  "command": "E:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe  @CMakeFiles/GateServer.dir/includes_CXX.rsp -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++20 -o CMakeFiles\\GateServer.dir\\proto_generated\\message.grpc.pb.cc.obj -c E:\\cpp_project\\TinyChat\\server\\GateServer\\build\\proto_generated\\message.grpc.pb.cc",
+  "file": "E:/cpp_project/TinyChat/server/GateServer/build/proto_generated/message.grpc.pb.cc",
+  "output": "CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.obj"
 }
 ]

@@ -21,34 +21,34 @@ namespace _pb = ::PROTOBUF_NAMESPACE_ID;
 namespace _pbi = _pb::internal;
 
 namespace message {
-PROTOBUF_CONSTEXPR GetVarifyReq::GetVarifyReq(
+PROTOBUF_CONSTEXPR GetVerifyReq::GetVerifyReq(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.email_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
   , /*decltype(_impl_._cached_size_)*/{}} {}
-struct GetVarifyReqDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR GetVarifyReqDefaultTypeInternal()
+struct GetVerifyReqDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR GetVerifyReqDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~GetVarifyReqDefaultTypeInternal() {}
+  ~GetVerifyReqDefaultTypeInternal() {}
   union {
-    GetVarifyReq _instance;
+    GetVerifyReq _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GetVarifyReqDefaultTypeInternal _GetVarifyReq_default_instance_;
-PROTOBUF_CONSTEXPR GetVarifyRsp::GetVarifyRsp(
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GetVerifyReqDefaultTypeInternal _GetVerifyReq_default_instance_;
+PROTOBUF_CONSTEXPR GetVerifyRsp::GetVerifyRsp(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.email_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
   , /*decltype(_impl_.code_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
   , /*decltype(_impl_.error_)*/0
   , /*decltype(_impl_._cached_size_)*/{}} {}
-struct GetVarifyRspDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR GetVarifyRspDefaultTypeInternal()
+struct GetVerifyRspDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR GetVerifyRspDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~GetVarifyRspDefaultTypeInternal() {}
+  ~GetVerifyRspDefaultTypeInternal() {}
   union {
-    GetVarifyRsp _instance;
+    GetVerifyRsp _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GetVarifyRspDefaultTypeInternal _GetVarifyRsp_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GetVerifyRspDefaultTypeInternal _GetVerifyRsp_default_instance_;
 }  // namespace message
 static ::_pb::Metadata file_level_metadata_message_2eproto[2];
 static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_message_2eproto = nullptr;
@@ -56,38 +56,38 @@ static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors
 
 const uint32_t TableStruct_message_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::message::GetVarifyReq, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::message::GetVerifyReq, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::message::GetVarifyReq, _impl_.email_),
+  PROTOBUF_FIELD_OFFSET(::message::GetVerifyReq, _impl_.email_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::message::GetVarifyRsp, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::message::GetVerifyRsp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::message::GetVarifyRsp, _impl_.error_),
-  PROTOBUF_FIELD_OFFSET(::message::GetVarifyRsp, _impl_.email_),
-  PROTOBUF_FIELD_OFFSET(::message::GetVarifyRsp, _impl_.code_),
+  PROTOBUF_FIELD_OFFSET(::message::GetVerifyRsp, _impl_.error_),
+  PROTOBUF_FIELD_OFFSET(::message::GetVerifyRsp, _impl_.email_),
+  PROTOBUF_FIELD_OFFSET(::message::GetVerifyRsp, _impl_.code_),
 };
 static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::message::GetVarifyReq)},
-  { 7, -1, -1, sizeof(::message::GetVarifyRsp)},
+  { 0, -1, -1, sizeof(::message::GetVerifyReq)},
+  { 7, -1, -1, sizeof(::message::GetVerifyRsp)},
 };
 
 static const ::_pb::Message* const file_default_instances[] = {
-  &::message::_GetVarifyReq_default_instance_._instance,
-  &::message::_GetVarifyRsp_default_instance_._instance,
+  &::message::_GetVerifyReq_default_instance_._instance,
+  &::message::_GetVerifyRsp_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_message_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\rmessage.proto\022\007message\"\035\n\014GetVarifyReq"
-  "\022\r\n\005email\030\001 \001(\t\":\n\014GetVarifyRsp\022\r\n\005error"
+  "\n\rmessage.proto\022\007message\"\035\n\014GetVerifyReq"
+  "\022\r\n\005email\030\001 \001(\t\":\n\014GetVerifyRsp\022\r\n\005error"
   "\030\001 \001(\005\022\r\n\005email\030\002 \001(\t\022\014\n\004code\030\003 \001(\t2P\n\rV"
-  "arifyService\022\?\n\rGetVarifyCode\022\025.message."
-  "GetVarifyReq\032\025.message.GetVarifyRsp\"\000b\006p"
+  "erifyService\022\?\n\rGetVerifyCode\022\025.message."
+  "GetVerifyReq\032\025.message.GetVerifyRsp\"\000b\006p"
   "roto3"
   ;
 static ::_pbi::once_flag descriptor_table_message_2eproto_once;
@@ -109,19 +109,19 @@ namespace message {
 
 // ===================================================================
 
-class GetVarifyReq::_Internal {
+class GetVerifyReq::_Internal {
  public:
 };
 
-GetVarifyReq::GetVarifyReq(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+GetVerifyReq::GetVerifyReq(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:message.GetVarifyReq)
+  // @@protoc_insertion_point(arena_constructor:message.GetVerifyReq)
 }
-GetVarifyReq::GetVarifyReq(const GetVarifyReq& from)
+GetVerifyReq::GetVerifyReq(const GetVerifyReq& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  GetVarifyReq* const _this = this; (void)_this;
+  GetVerifyReq* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.email_){}
     , /*decltype(_impl_._cached_size_)*/{}};
@@ -135,10 +135,10 @@ GetVarifyReq::GetVarifyReq(const GetVarifyReq& from)
     _this->_impl_.email_.Set(from._internal_email(), 
       _this->GetArenaForAllocation());
   }
-  // @@protoc_insertion_point(copy_constructor:message.GetVarifyReq)
+  // @@protoc_insertion_point(copy_constructor:message.GetVerifyReq)
 }
 
-inline void GetVarifyReq::SharedCtor(
+inline void GetVerifyReq::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
@@ -152,8 +152,8 @@ inline void GetVarifyReq::SharedCtor(
   #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
-GetVarifyReq::~GetVarifyReq() {
-  // @@protoc_insertion_point(destructor:message.GetVarifyReq)
+GetVerifyReq::~GetVerifyReq() {
+  // @@protoc_insertion_point(destructor:message.GetVerifyReq)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -161,17 +161,17 @@ GetVarifyReq::~GetVarifyReq() {
   SharedDtor();
 }
 
-inline void GetVarifyReq::SharedDtor() {
+inline void GetVerifyReq::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.email_.Destroy();
 }
 
-void GetVarifyReq::SetCachedSize(int size) const {
+void GetVerifyReq::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void GetVarifyReq::Clear() {
-// @@protoc_insertion_point(message_clear_start:message.GetVarifyReq)
+void GetVerifyReq::Clear() {
+// @@protoc_insertion_point(message_clear_start:message.GetVerifyReq)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -180,7 +180,7 @@ void GetVarifyReq::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* GetVarifyReq::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* GetVerifyReq::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
@@ -192,7 +192,7 @@ const char* GetVarifyReq::_InternalParse(const char* ptr, ::_pbi::ParseContext* 
           auto str = _internal_mutable_email();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "message.GetVarifyReq.email"));
+          CHK_(::_pbi::VerifyUTF8(str, "message.GetVerifyReq.email"));
         } else
           goto handle_unusual;
         continue;
@@ -219,9 +219,9 @@ failure:
 #undef CHK_
 }
 
-uint8_t* GetVarifyReq::_InternalSerialize(
+uint8_t* GetVerifyReq::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:message.GetVarifyReq)
+  // @@protoc_insertion_point(serialize_to_array_start:message.GetVerifyReq)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -230,7 +230,7 @@ uint8_t* GetVarifyReq::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_email().data(), static_cast<int>(this->_internal_email().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "message.GetVarifyReq.email");
+      "message.GetVerifyReq.email");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_email(), target);
   }
@@ -239,12 +239,12 @@ uint8_t* GetVarifyReq::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:message.GetVarifyReq)
+  // @@protoc_insertion_point(serialize_to_array_end:message.GetVerifyReq)
   return target;
 }
 
-size_t GetVarifyReq::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:message.GetVarifyReq)
+size_t GetVerifyReq::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:message.GetVerifyReq)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -261,17 +261,17 @@ size_t GetVarifyReq::ByteSizeLong() const {
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData GetVarifyReq::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData GetVerifyReq::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    GetVarifyReq::MergeImpl
+    GetVerifyReq::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetVarifyReq::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetVerifyReq::GetClassData() const { return &_class_data_; }
 
 
-void GetVarifyReq::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<GetVarifyReq*>(&to_msg);
-  auto& from = static_cast<const GetVarifyReq&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:message.GetVarifyReq)
+void GetVerifyReq::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<GetVerifyReq*>(&to_msg);
+  auto& from = static_cast<const GetVerifyReq&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:message.GetVerifyReq)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -282,18 +282,18 @@ void GetVarifyReq::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::P
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void GetVarifyReq::CopyFrom(const GetVarifyReq& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:message.GetVarifyReq)
+void GetVerifyReq::CopyFrom(const GetVerifyReq& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:message.GetVerifyReq)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool GetVarifyReq::IsInitialized() const {
+bool GetVerifyReq::IsInitialized() const {
   return true;
 }
 
-void GetVarifyReq::InternalSwap(GetVarifyReq* other) {
+void GetVerifyReq::InternalSwap(GetVerifyReq* other) {
   using std::swap;
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
@@ -304,7 +304,7 @@ void GetVarifyReq::InternalSwap(GetVarifyReq* other) {
   );
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata GetVarifyReq::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata GetVerifyReq::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_message_2eproto_getter, &descriptor_table_message_2eproto_once,
       file_level_metadata_message_2eproto[0]);
@@ -312,19 +312,19 @@ void GetVarifyReq::InternalSwap(GetVarifyReq* other) {
 
 // ===================================================================
 
-class GetVarifyRsp::_Internal {
+class GetVerifyRsp::_Internal {
  public:
 };
 
-GetVarifyRsp::GetVarifyRsp(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+GetVerifyRsp::GetVerifyRsp(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:message.GetVarifyRsp)
+  // @@protoc_insertion_point(arena_constructor:message.GetVerifyRsp)
 }
-GetVarifyRsp::GetVarifyRsp(const GetVarifyRsp& from)
+GetVerifyRsp::GetVerifyRsp(const GetVerifyRsp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  GetVarifyRsp* const _this = this; (void)_this;
+  GetVerifyRsp* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.email_){}
     , decltype(_impl_.code_){}
@@ -349,10 +349,10 @@ GetVarifyRsp::GetVarifyRsp(const GetVarifyRsp& from)
       _this->GetArenaForAllocation());
   }
   _this->_impl_.error_ = from._impl_.error_;
-  // @@protoc_insertion_point(copy_constructor:message.GetVarifyRsp)
+  // @@protoc_insertion_point(copy_constructor:message.GetVerifyRsp)
 }
 
-inline void GetVarifyRsp::SharedCtor(
+inline void GetVerifyRsp::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
@@ -372,8 +372,8 @@ inline void GetVarifyRsp::SharedCtor(
   #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
-GetVarifyRsp::~GetVarifyRsp() {
-  // @@protoc_insertion_point(destructor:message.GetVarifyRsp)
+GetVerifyRsp::~GetVerifyRsp() {
+  // @@protoc_insertion_point(destructor:message.GetVerifyRsp)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -381,18 +381,18 @@ GetVarifyRsp::~GetVarifyRsp() {
   SharedDtor();
 }
 
-inline void GetVarifyRsp::SharedDtor() {
+inline void GetVerifyRsp::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.email_.Destroy();
   _impl_.code_.Destroy();
 }
 
-void GetVarifyRsp::SetCachedSize(int size) const {
+void GetVerifyRsp::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void GetVarifyRsp::Clear() {
-// @@protoc_insertion_point(message_clear_start:message.GetVarifyRsp)
+void GetVerifyRsp::Clear() {
+// @@protoc_insertion_point(message_clear_start:message.GetVerifyRsp)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -403,7 +403,7 @@ void GetVarifyRsp::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* GetVarifyRsp::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* GetVerifyRsp::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
@@ -423,7 +423,7 @@ const char* GetVarifyRsp::_InternalParse(const char* ptr, ::_pbi::ParseContext* 
           auto str = _internal_mutable_email();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "message.GetVarifyRsp.email"));
+          CHK_(::_pbi::VerifyUTF8(str, "message.GetVerifyRsp.email"));
         } else
           goto handle_unusual;
         continue;
@@ -433,7 +433,7 @@ const char* GetVarifyRsp::_InternalParse(const char* ptr, ::_pbi::ParseContext* 
           auto str = _internal_mutable_code();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "message.GetVarifyRsp.code"));
+          CHK_(::_pbi::VerifyUTF8(str, "message.GetVerifyRsp.code"));
         } else
           goto handle_unusual;
         continue;
@@ -460,9 +460,9 @@ failure:
 #undef CHK_
 }
 
-uint8_t* GetVarifyRsp::_InternalSerialize(
+uint8_t* GetVerifyRsp::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:message.GetVarifyRsp)
+  // @@protoc_insertion_point(serialize_to_array_start:message.GetVerifyRsp)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -477,7 +477,7 @@ uint8_t* GetVarifyRsp::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_email().data(), static_cast<int>(this->_internal_email().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "message.GetVarifyRsp.email");
+      "message.GetVerifyRsp.email");
     target = stream->WriteStringMaybeAliased(
         2, this->_internal_email(), target);
   }
@@ -487,7 +487,7 @@ uint8_t* GetVarifyRsp::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_code().data(), static_cast<int>(this->_internal_code().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "message.GetVarifyRsp.code");
+      "message.GetVerifyRsp.code");
     target = stream->WriteStringMaybeAliased(
         3, this->_internal_code(), target);
   }
@@ -496,12 +496,12 @@ uint8_t* GetVarifyRsp::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:message.GetVarifyRsp)
+  // @@protoc_insertion_point(serialize_to_array_end:message.GetVerifyRsp)
   return target;
 }
 
-size_t GetVarifyRsp::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:message.GetVarifyRsp)
+size_t GetVerifyRsp::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:message.GetVerifyRsp)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -530,17 +530,17 @@ size_t GetVarifyRsp::ByteSizeLong() const {
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData GetVarifyRsp::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData GetVerifyRsp::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    GetVarifyRsp::MergeImpl
+    GetVerifyRsp::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetVarifyRsp::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetVerifyRsp::GetClassData() const { return &_class_data_; }
 
 
-void GetVarifyRsp::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<GetVarifyRsp*>(&to_msg);
-  auto& from = static_cast<const GetVarifyRsp&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:message.GetVarifyRsp)
+void GetVerifyRsp::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<GetVerifyRsp*>(&to_msg);
+  auto& from = static_cast<const GetVerifyRsp&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:message.GetVerifyRsp)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -557,18 +557,18 @@ void GetVarifyRsp::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::P
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void GetVarifyRsp::CopyFrom(const GetVarifyRsp& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:message.GetVarifyRsp)
+void GetVerifyRsp::CopyFrom(const GetVerifyRsp& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:message.GetVerifyRsp)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool GetVarifyRsp::IsInitialized() const {
+bool GetVerifyRsp::IsInitialized() const {
   return true;
 }
 
-void GetVarifyRsp::InternalSwap(GetVarifyRsp* other) {
+void GetVerifyRsp::InternalSwap(GetVerifyRsp* other) {
   using std::swap;
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
@@ -584,7 +584,7 @@ void GetVarifyRsp::InternalSwap(GetVarifyRsp* other) {
   swap(_impl_.error_, other->_impl_.error_);
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata GetVarifyRsp::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata GetVerifyRsp::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_message_2eproto_getter, &descriptor_table_message_2eproto_once,
       file_level_metadata_message_2eproto[1]);
@@ -593,13 +593,13 @@ void GetVarifyRsp::InternalSwap(GetVarifyRsp* other) {
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace message
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::message::GetVarifyReq*
-Arena::CreateMaybeMessage< ::message::GetVarifyReq >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::message::GetVarifyReq >(arena);
+template<> PROTOBUF_NOINLINE ::message::GetVerifyReq*
+Arena::CreateMaybeMessage< ::message::GetVerifyReq >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::message::GetVerifyReq >(arena);
 }
-template<> PROTOBUF_NOINLINE ::message::GetVarifyRsp*
-Arena::CreateMaybeMessage< ::message::GetVarifyRsp >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::message::GetVarifyRsp >(arena);
+template<> PROTOBUF_NOINLINE ::message::GetVerifyRsp*
+Arena::CreateMaybeMessage< ::message::GetVerifyRsp >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::message::GetVerifyRsp >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

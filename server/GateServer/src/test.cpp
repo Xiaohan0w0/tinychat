@@ -2,15 +2,22 @@
 #include <json/json.h>
 #include <json/value.h>
 #include <json/reader.h>
+#include "ConfigMgr.h"
 #include "CServer.h"
 
 int main()
 {
+    // 创建 ConfigMgr 实例
+    ConfigMgr gCfgMgr;
+    // 从配置文件中获取 GateServer 端口
+    // 并将其转换为 unsigned short 类型
+    std::string gate_root_str = gCfgMgr["GateServer"]["Port"];
+    unsigned short gate_port = atoi(gate_root_str.c_str());
+
     // io_context 是跨平台的"异步 I/O 管理器"，用于管理异步 I/O 操作
     // epoll 是 Linux 下的异步 I/O 操作，用于监听多个文件描述符上的 I/O 事件
     try{
-        // 监听端口
-        unsigned short port = static_cast<unsigned short>(8080);
+        // 监听 gate_port 端口
         // 创建 io_context 实例
         net::io_context ioc{1};
         // 创建信号集，用于监听 SIGINT 和 SIGTERM 信号
@@ -27,7 +34,7 @@ int main()
         });
         // 创建 CServer 实例
         // 并启动监听连接
-        std::make_shared<CServer>(ioc, port)->Start();
+        std::make_shared<CServer>(ioc, gate_port)->Start();
         // 运行 io_context 实例，等待 I/O 事件发生
         ioc.run();
     }catch(std::exception const& e){

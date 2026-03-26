@@ -52,10 +52,10 @@ RM = E:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\cpp_project\Tiny-Chat\server\GateServer
+CMAKE_SOURCE_DIR = E:\cpp_project\TinyChat\server\GateServer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\cpp_project\Tiny-Chat\server\GateServer\build
+CMAKE_BINARY_DIR = E:\cpp_project\TinyChat\server\GateServer\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/GateServer.dir/depend.make
@@ -70,170 +70,206 @@ include CMakeFiles/GateServer.dir/flags.make
 
 CMakeFiles/GateServer.dir/src/CServer.cpp.obj: CMakeFiles/GateServer.dir/flags.make
 CMakeFiles/GateServer.dir/src/CServer.cpp.obj: CMakeFiles/GateServer.dir/includes_CXX.rsp
-CMakeFiles/GateServer.dir/src/CServer.cpp.obj: E:/cpp_project/Tiny-Chat/server/GateServer/src/CServer.cpp
+CMakeFiles/GateServer.dir/src/CServer.cpp.obj: E:/cpp_project/TinyChat/server/GateServer/src/CServer.cpp
 CMakeFiles/GateServer.dir/src/CServer.cpp.obj: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\cpp_project\Tiny-Chat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GateServer.dir/src/CServer.cpp.obj"
-	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/src/CServer.cpp.obj -MF CMakeFiles\GateServer.dir\src\CServer.cpp.obj.d -o CMakeFiles\GateServer.dir\src\CServer.cpp.obj -c E:\cpp_project\Tiny-Chat\server\GateServer\src\CServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GateServer.dir/src/CServer.cpp.obj"
+	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/src/CServer.cpp.obj -MF CMakeFiles\GateServer.dir\src\CServer.cpp.obj.d -o CMakeFiles\GateServer.dir\src\CServer.cpp.obj -c E:\cpp_project\TinyChat\server\GateServer\src\CServer.cpp
 
 CMakeFiles/GateServer.dir/src/CServer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/src/CServer.cpp.i"
-	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\cpp_project\Tiny-Chat\server\GateServer\src\CServer.cpp > CMakeFiles\GateServer.dir\src\CServer.cpp.i
+	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\cpp_project\TinyChat\server\GateServer\src\CServer.cpp > CMakeFiles\GateServer.dir\src\CServer.cpp.i
 
 CMakeFiles/GateServer.dir/src/CServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/src/CServer.cpp.s"
-	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\cpp_project\Tiny-Chat\server\GateServer\src\CServer.cpp -o CMakeFiles\GateServer.dir\src\CServer.cpp.s
+	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\cpp_project\TinyChat\server\GateServer\src\CServer.cpp -o CMakeFiles\GateServer.dir\src\CServer.cpp.s
+
+CMakeFiles/GateServer.dir/src/ConfigMgr.cpp.obj: CMakeFiles/GateServer.dir/flags.make
+CMakeFiles/GateServer.dir/src/ConfigMgr.cpp.obj: CMakeFiles/GateServer.dir/includes_CXX.rsp
+CMakeFiles/GateServer.dir/src/ConfigMgr.cpp.obj: E:/cpp_project/TinyChat/server/GateServer/src/ConfigMgr.cpp
+CMakeFiles/GateServer.dir/src/ConfigMgr.cpp.obj: CMakeFiles/GateServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GateServer.dir/src/ConfigMgr.cpp.obj"
+	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/src/ConfigMgr.cpp.obj -MF CMakeFiles\GateServer.dir\src\ConfigMgr.cpp.obj.d -o CMakeFiles\GateServer.dir\src\ConfigMgr.cpp.obj -c E:\cpp_project\TinyChat\server\GateServer\src\ConfigMgr.cpp
+
+CMakeFiles/GateServer.dir/src/ConfigMgr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/src/ConfigMgr.cpp.i"
+	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\cpp_project\TinyChat\server\GateServer\src\ConfigMgr.cpp > CMakeFiles\GateServer.dir\src\ConfigMgr.cpp.i
+
+CMakeFiles/GateServer.dir/src/ConfigMgr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/src/ConfigMgr.cpp.s"
+	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\cpp_project\TinyChat\server\GateServer\src\ConfigMgr.cpp -o CMakeFiles\GateServer.dir\src\ConfigMgr.cpp.s
 
 CMakeFiles/GateServer.dir/src/HttpConnection.cpp.obj: CMakeFiles/GateServer.dir/flags.make
 CMakeFiles/GateServer.dir/src/HttpConnection.cpp.obj: CMakeFiles/GateServer.dir/includes_CXX.rsp
-CMakeFiles/GateServer.dir/src/HttpConnection.cpp.obj: E:/cpp_project/Tiny-Chat/server/GateServer/src/HttpConnection.cpp
+CMakeFiles/GateServer.dir/src/HttpConnection.cpp.obj: E:/cpp_project/TinyChat/server/GateServer/src/HttpConnection.cpp
 CMakeFiles/GateServer.dir/src/HttpConnection.cpp.obj: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\cpp_project\Tiny-Chat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GateServer.dir/src/HttpConnection.cpp.obj"
-	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/src/HttpConnection.cpp.obj -MF CMakeFiles\GateServer.dir\src\HttpConnection.cpp.obj.d -o CMakeFiles\GateServer.dir\src\HttpConnection.cpp.obj -c E:\cpp_project\Tiny-Chat\server\GateServer\src\HttpConnection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GateServer.dir/src/HttpConnection.cpp.obj"
+	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/src/HttpConnection.cpp.obj -MF CMakeFiles\GateServer.dir\src\HttpConnection.cpp.obj.d -o CMakeFiles\GateServer.dir\src\HttpConnection.cpp.obj -c E:\cpp_project\TinyChat\server\GateServer\src\HttpConnection.cpp
 
 CMakeFiles/GateServer.dir/src/HttpConnection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/src/HttpConnection.cpp.i"
-	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\cpp_project\Tiny-Chat\server\GateServer\src\HttpConnection.cpp > CMakeFiles\GateServer.dir\src\HttpConnection.cpp.i
+	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\cpp_project\TinyChat\server\GateServer\src\HttpConnection.cpp > CMakeFiles\GateServer.dir\src\HttpConnection.cpp.i
 
 CMakeFiles/GateServer.dir/src/HttpConnection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/src/HttpConnection.cpp.s"
-	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\cpp_project\Tiny-Chat\server\GateServer\src\HttpConnection.cpp -o CMakeFiles\GateServer.dir\src\HttpConnection.cpp.s
+	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\cpp_project\TinyChat\server\GateServer\src\HttpConnection.cpp -o CMakeFiles\GateServer.dir\src\HttpConnection.cpp.s
 
 CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj: CMakeFiles/GateServer.dir/flags.make
 CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj: CMakeFiles/GateServer.dir/includes_CXX.rsp
-CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj: E:/cpp_project/Tiny-Chat/server/GateServer/src/LogicSystem.cpp
+CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj: E:/cpp_project/TinyChat/server/GateServer/src/LogicSystem.cpp
 CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\cpp_project\Tiny-Chat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj"
-	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj -MF CMakeFiles\GateServer.dir\src\LogicSystem.cpp.obj.d -o CMakeFiles\GateServer.dir\src\LogicSystem.cpp.obj -c E:\cpp_project\Tiny-Chat\server\GateServer\src\LogicSystem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj"
+	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj -MF CMakeFiles\GateServer.dir\src\LogicSystem.cpp.obj.d -o CMakeFiles\GateServer.dir\src\LogicSystem.cpp.obj -c E:\cpp_project\TinyChat\server\GateServer\src\LogicSystem.cpp
 
 CMakeFiles/GateServer.dir/src/LogicSystem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/src/LogicSystem.cpp.i"
-	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\cpp_project\Tiny-Chat\server\GateServer\src\LogicSystem.cpp > CMakeFiles\GateServer.dir\src\LogicSystem.cpp.i
+	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\cpp_project\TinyChat\server\GateServer\src\LogicSystem.cpp > CMakeFiles\GateServer.dir\src\LogicSystem.cpp.i
 
 CMakeFiles/GateServer.dir/src/LogicSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/src/LogicSystem.cpp.s"
-	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\cpp_project\Tiny-Chat\server\GateServer\src\LogicSystem.cpp -o CMakeFiles\GateServer.dir\src\LogicSystem.cpp.s
+	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\cpp_project\TinyChat\server\GateServer\src\LogicSystem.cpp -o CMakeFiles\GateServer.dir\src\LogicSystem.cpp.s
 
 CMakeFiles/GateServer.dir/src/test.cpp.obj: CMakeFiles/GateServer.dir/flags.make
 CMakeFiles/GateServer.dir/src/test.cpp.obj: CMakeFiles/GateServer.dir/includes_CXX.rsp
-CMakeFiles/GateServer.dir/src/test.cpp.obj: E:/cpp_project/Tiny-Chat/server/GateServer/src/test.cpp
+CMakeFiles/GateServer.dir/src/test.cpp.obj: E:/cpp_project/TinyChat/server/GateServer/src/test.cpp
 CMakeFiles/GateServer.dir/src/test.cpp.obj: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\cpp_project\Tiny-Chat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GateServer.dir/src/test.cpp.obj"
-	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/src/test.cpp.obj -MF CMakeFiles\GateServer.dir\src\test.cpp.obj.d -o CMakeFiles\GateServer.dir\src\test.cpp.obj -c E:\cpp_project\Tiny-Chat\server\GateServer\src\test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GateServer.dir/src/test.cpp.obj"
+	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/src/test.cpp.obj -MF CMakeFiles\GateServer.dir\src\test.cpp.obj.d -o CMakeFiles\GateServer.dir\src\test.cpp.obj -c E:\cpp_project\TinyChat\server\GateServer\src\test.cpp
 
 CMakeFiles/GateServer.dir/src/test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/src/test.cpp.i"
-	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\cpp_project\Tiny-Chat\server\GateServer\src\test.cpp > CMakeFiles\GateServer.dir\src\test.cpp.i
+	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\cpp_project\TinyChat\server\GateServer\src\test.cpp > CMakeFiles\GateServer.dir\src\test.cpp.i
 
 CMakeFiles/GateServer.dir/src/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/src/test.cpp.s"
-	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\cpp_project\Tiny-Chat\server\GateServer\src\test.cpp -o CMakeFiles\GateServer.dir\src\test.cpp.s
+	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\cpp_project\TinyChat\server\GateServer\src\test.cpp -o CMakeFiles\GateServer.dir\src\test.cpp.s
 
 CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.obj: CMakeFiles/GateServer.dir/flags.make
 CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.obj: CMakeFiles/GateServer.dir/includes_CXX.rsp
 CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.obj: proto_generated/message.pb.cc
 CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.obj: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\cpp_project\Tiny-Chat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.obj"
-	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.obj -MF CMakeFiles\GateServer.dir\proto_generated\message.pb.cc.obj.d -o CMakeFiles\GateServer.dir\proto_generated\message.pb.cc.obj -c E:\cpp_project\Tiny-Chat\server\GateServer\build\proto_generated\message.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.obj"
+	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.obj -MF CMakeFiles\GateServer.dir\proto_generated\message.pb.cc.obj.d -o CMakeFiles\GateServer.dir\proto_generated\message.pb.cc.obj -c E:\cpp_project\TinyChat\server\GateServer\build\proto_generated\message.pb.cc
 
 CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.i"
-	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\cpp_project\Tiny-Chat\server\GateServer\build\proto_generated\message.pb.cc > CMakeFiles\GateServer.dir\proto_generated\message.pb.cc.i
+	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\cpp_project\TinyChat\server\GateServer\build\proto_generated\message.pb.cc > CMakeFiles\GateServer.dir\proto_generated\message.pb.cc.i
 
 CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.s"
-	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\cpp_project\Tiny-Chat\server\GateServer\build\proto_generated\message.pb.cc -o CMakeFiles\GateServer.dir\proto_generated\message.pb.cc.s
+	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\cpp_project\TinyChat\server\GateServer\build\proto_generated\message.pb.cc -o CMakeFiles\GateServer.dir\proto_generated\message.pb.cc.s
+
+CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.obj: CMakeFiles/GateServer.dir/flags.make
+CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.obj: CMakeFiles/GateServer.dir/includes_CXX.rsp
+CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.obj: proto_generated/message.grpc.pb.cc
+CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.obj: CMakeFiles/GateServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.obj"
+	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.obj -MF CMakeFiles\GateServer.dir\proto_generated\message.grpc.pb.cc.obj.d -o CMakeFiles\GateServer.dir\proto_generated\message.grpc.pb.cc.obj -c E:\cpp_project\TinyChat\server\GateServer\build\proto_generated\message.grpc.pb.cc
+
+CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.i"
+	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\cpp_project\TinyChat\server\GateServer\build\proto_generated\message.grpc.pb.cc > CMakeFiles\GateServer.dir\proto_generated\message.grpc.pb.cc.i
+
+CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.s"
+	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\cpp_project\TinyChat\server\GateServer\build\proto_generated\message.grpc.pb.cc -o CMakeFiles\GateServer.dir\proto_generated\message.grpc.pb.cc.s
 
 # Object files for target GateServer
 GateServer_OBJECTS = \
 "CMakeFiles/GateServer.dir/src/CServer.cpp.obj" \
+"CMakeFiles/GateServer.dir/src/ConfigMgr.cpp.obj" \
 "CMakeFiles/GateServer.dir/src/HttpConnection.cpp.obj" \
 "CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj" \
 "CMakeFiles/GateServer.dir/src/test.cpp.obj" \
-"CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.obj"
+"CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.obj" \
+"CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.obj"
 
 # External object files for target GateServer
 GateServer_EXTERNAL_OBJECTS =
 
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/src/CServer.cpp.obj
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/src/HttpConnection.cpp.obj
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/src/test.cpp.obj
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.obj
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/build.make
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/jsoncpp-1.9.7/installed/lib/libjsoncpp.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libprotobuf.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libgpr.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libgrpc.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libgrpc++.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libgrpc++_reflection.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libaddress_sorting.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libcares.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libzlibstatic.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libupb.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libssl.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libcrypto.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libre2.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_bad_any_cast_impl.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_bad_optional_access.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_bad_variant_access.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_base.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_city.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_civil_time.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_cord.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_debugging_internal.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_demangle_internal.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_examine_stack.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_exponential_biased.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_failure_signal_handler.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_config.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_internal.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_marshalling.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_parse.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_program_name.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_usage.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_usage_internal.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_graphcycles_internal.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_hash.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_hashtablez_sampler.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_int128.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_leak_check.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_log_severity.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_malloc_internal.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_periodic_sampler.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_distributions.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_distribution_test_util.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_pool_urbg.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_randen.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_randen_hwaes.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_randen_hwaes_impl.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_randen_slow.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_seed_material.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_seed_gen_exception.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_seed_sequences.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_raw_hash_set.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_raw_logging_internal.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_scoped_set_env.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_spinlock_wait.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_stacktrace.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_status.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_strings.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_strings_internal.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_str_format_internal.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_symbolize.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_synchronization.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_throw_delegate.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_time.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_time_zone.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_statusor.a
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/linkLibs.rsp
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/objects1.rsp
-E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\cpp_project\Tiny-Chat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable E:\cpp_project\Tiny-Chat\server\GateServer\bin\GateServer.exe"
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/src/CServer.cpp.obj
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/src/ConfigMgr.cpp.obj
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/src/HttpConnection.cpp.obj
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/src/test.cpp.obj
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.obj
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.obj
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/build.make
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/jsoncpp-1.9.7/installed/lib/libjsoncpp.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/boost_1_90_0/installed/lib/libboost_filesystem-mgw13-mt-x64-1_90.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/boost_1_90_0/installed/lib/libboost_atomic-mgw13-mt-x64-1_90.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libprotobuf.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libgpr.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libgrpc.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libgrpc++.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libgrpc++_reflection.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libaddress_sorting.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libcares.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libzlibstatic.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libupb.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libssl.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libcrypto.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libre2.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_statusor.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_status.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_internal.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_marshalling.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_parse.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_program_name.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_usage.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_usage_internal.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_config.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_synchronization.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_graphcycles_internal.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_time.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_time_zone.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_civil_time.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_cord.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_hash.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_hashtablez_sampler.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_raw_hash_set.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_strings.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_strings_internal.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_str_format_internal.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_symbolize.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_stacktrace.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_debugging_internal.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_demangle_internal.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_examine_stack.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_failure_signal_handler.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_leak_check.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_scoped_set_env.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_distributions.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_distribution_test_util.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_pool_urbg.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_randen.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_randen_hwaes.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_randen_hwaes_impl.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_randen_slow.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_seed_material.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_seed_gen_exception.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_seed_sequences.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_periodic_sampler.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_city.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_base.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_spinlock_wait.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_malloc_internal.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_raw_logging_internal.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_log_severity.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_throw_delegate.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_int128.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_exponential_biased.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_bad_any_cast_impl.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_bad_optional_access.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/grpc_v1.50/installed/lib/libabsl_bad_variant_access.a
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/linkLibs.rsp
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/objects1.rsp
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable E:\cpp_project\TinyChat\server\GateServer\bin\GateServer.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GateServer.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/GateServer.dir/build: E:/cpp_project/Tiny-Chat/server/GateServer/bin/GateServer.exe
+CMakeFiles/GateServer.dir/build: E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe
 .PHONY : CMakeFiles/GateServer.dir/build
 
 CMakeFiles/GateServer.dir/clean:
@@ -241,6 +277,6 @@ CMakeFiles/GateServer.dir/clean:
 .PHONY : CMakeFiles/GateServer.dir/clean
 
 CMakeFiles/GateServer.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\cpp_project\Tiny-Chat\server\GateServer E:\cpp_project\Tiny-Chat\server\GateServer E:\cpp_project\Tiny-Chat\server\GateServer\build E:\cpp_project\Tiny-Chat\server\GateServer\build E:\cpp_project\Tiny-Chat\server\GateServer\build\CMakeFiles\GateServer.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\cpp_project\TinyChat\server\GateServer E:\cpp_project\TinyChat\server\GateServer E:\cpp_project\TinyChat\server\GateServer\build E:\cpp_project\TinyChat\server\GateServer\build E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles\GateServer.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/GateServer.dir/depend
 

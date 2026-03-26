@@ -45,39 +45,39 @@ struct TableStruct_message_2eproto {
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_message_2eproto;
 namespace message {
-class GetVarifyReq;
-struct GetVarifyReqDefaultTypeInternal;
-extern GetVarifyReqDefaultTypeInternal _GetVarifyReq_default_instance_;
-class GetVarifyRsp;
-struct GetVarifyRspDefaultTypeInternal;
-extern GetVarifyRspDefaultTypeInternal _GetVarifyRsp_default_instance_;
+class GetVerifyReq;
+struct GetVerifyReqDefaultTypeInternal;
+extern GetVerifyReqDefaultTypeInternal _GetVerifyReq_default_instance_;
+class GetVerifyRsp;
+struct GetVerifyRspDefaultTypeInternal;
+extern GetVerifyRspDefaultTypeInternal _GetVerifyRsp_default_instance_;
 }  // namespace message
 PROTOBUF_NAMESPACE_OPEN
-template<> ::message::GetVarifyReq* Arena::CreateMaybeMessage<::message::GetVarifyReq>(Arena*);
-template<> ::message::GetVarifyRsp* Arena::CreateMaybeMessage<::message::GetVarifyRsp>(Arena*);
+template<> ::message::GetVerifyReq* Arena::CreateMaybeMessage<::message::GetVerifyReq>(Arena*);
+template<> ::message::GetVerifyRsp* Arena::CreateMaybeMessage<::message::GetVerifyRsp>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 namespace message {
 
 // ===================================================================
 
-class GetVarifyReq final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:message.GetVarifyReq) */ {
+class GetVerifyReq final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:message.GetVerifyReq) */ {
  public:
-  inline GetVarifyReq() : GetVarifyReq(nullptr) {}
-  ~GetVarifyReq() override;
-  explicit PROTOBUF_CONSTEXPR GetVarifyReq(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline GetVerifyReq() : GetVerifyReq(nullptr) {}
+  ~GetVerifyReq() override;
+  explicit PROTOBUF_CONSTEXPR GetVerifyReq(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  GetVarifyReq(const GetVarifyReq& from);
-  GetVarifyReq(GetVarifyReq&& from) noexcept
-    : GetVarifyReq() {
+  GetVerifyReq(const GetVerifyReq& from);
+  GetVerifyReq(GetVerifyReq&& from) noexcept
+    : GetVerifyReq() {
     *this = ::std::move(from);
   }
 
-  inline GetVarifyReq& operator=(const GetVarifyReq& from) {
+  inline GetVerifyReq& operator=(const GetVerifyReq& from) {
     CopyFrom(from);
     return *this;
   }
-  inline GetVarifyReq& operator=(GetVarifyReq&& from) noexcept {
+  inline GetVerifyReq& operator=(GetVerifyReq&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -100,20 +100,20 @@ class GetVarifyReq final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const GetVarifyReq& default_instance() {
+  static const GetVerifyReq& default_instance() {
     return *internal_default_instance();
   }
-  static inline const GetVarifyReq* internal_default_instance() {
-    return reinterpret_cast<const GetVarifyReq*>(
-               &_GetVarifyReq_default_instance_);
+  static inline const GetVerifyReq* internal_default_instance() {
+    return reinterpret_cast<const GetVerifyReq*>(
+               &_GetVerifyReq_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     0;
 
-  friend void swap(GetVarifyReq& a, GetVarifyReq& b) {
+  friend void swap(GetVerifyReq& a, GetVerifyReq& b) {
     a.Swap(&b);
   }
-  inline void Swap(GetVarifyReq* other) {
+  inline void Swap(GetVerifyReq* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -126,7 +126,7 @@ class GetVarifyReq final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(GetVarifyReq* other) {
+  void UnsafeArenaSwap(GetVerifyReq* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -134,14 +134,14 @@ class GetVarifyReq final :
 
   // implements Message ----------------------------------------------
 
-  GetVarifyReq* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<GetVarifyReq>(arena);
+  GetVerifyReq* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<GetVerifyReq>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const GetVarifyReq& from);
+  void CopyFrom(const GetVerifyReq& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const GetVarifyReq& from) {
-    GetVarifyReq::MergeImpl(*this, from);
+  void MergeFrom( const GetVerifyReq& from) {
+    GetVerifyReq::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -159,15 +159,15 @@ class GetVarifyReq final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(GetVarifyReq* other);
+  void InternalSwap(GetVerifyReq* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "message.GetVarifyReq";
+    return "message.GetVerifyReq";
   }
   protected:
-  explicit GetVarifyReq(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit GetVerifyReq(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -197,7 +197,7 @@ class GetVarifyReq final :
   std::string* _internal_mutable_email();
   public:
 
-  // @@protoc_insertion_point(class_scope:message.GetVarifyReq)
+  // @@protoc_insertion_point(class_scope:message.GetVerifyReq)
  private:
   class _Internal;
 
@@ -213,24 +213,24 @@ class GetVarifyReq final :
 };
 // -------------------------------------------------------------------
 
-class GetVarifyRsp final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:message.GetVarifyRsp) */ {
+class GetVerifyRsp final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:message.GetVerifyRsp) */ {
  public:
-  inline GetVarifyRsp() : GetVarifyRsp(nullptr) {}
-  ~GetVarifyRsp() override;
-  explicit PROTOBUF_CONSTEXPR GetVarifyRsp(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline GetVerifyRsp() : GetVerifyRsp(nullptr) {}
+  ~GetVerifyRsp() override;
+  explicit PROTOBUF_CONSTEXPR GetVerifyRsp(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  GetVarifyRsp(const GetVarifyRsp& from);
-  GetVarifyRsp(GetVarifyRsp&& from) noexcept
-    : GetVarifyRsp() {
+  GetVerifyRsp(const GetVerifyRsp& from);
+  GetVerifyRsp(GetVerifyRsp&& from) noexcept
+    : GetVerifyRsp() {
     *this = ::std::move(from);
   }
 
-  inline GetVarifyRsp& operator=(const GetVarifyRsp& from) {
+  inline GetVerifyRsp& operator=(const GetVerifyRsp& from) {
     CopyFrom(from);
     return *this;
   }
-  inline GetVarifyRsp& operator=(GetVarifyRsp&& from) noexcept {
+  inline GetVerifyRsp& operator=(GetVerifyRsp&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -253,20 +253,20 @@ class GetVarifyRsp final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const GetVarifyRsp& default_instance() {
+  static const GetVerifyRsp& default_instance() {
     return *internal_default_instance();
   }
-  static inline const GetVarifyRsp* internal_default_instance() {
-    return reinterpret_cast<const GetVarifyRsp*>(
-               &_GetVarifyRsp_default_instance_);
+  static inline const GetVerifyRsp* internal_default_instance() {
+    return reinterpret_cast<const GetVerifyRsp*>(
+               &_GetVerifyRsp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     1;
 
-  friend void swap(GetVarifyRsp& a, GetVarifyRsp& b) {
+  friend void swap(GetVerifyRsp& a, GetVerifyRsp& b) {
     a.Swap(&b);
   }
-  inline void Swap(GetVarifyRsp* other) {
+  inline void Swap(GetVerifyRsp* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -279,7 +279,7 @@ class GetVarifyRsp final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(GetVarifyRsp* other) {
+  void UnsafeArenaSwap(GetVerifyRsp* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -287,14 +287,14 @@ class GetVarifyRsp final :
 
   // implements Message ----------------------------------------------
 
-  GetVarifyRsp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<GetVarifyRsp>(arena);
+  GetVerifyRsp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<GetVerifyRsp>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const GetVarifyRsp& from);
+  void CopyFrom(const GetVerifyRsp& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const GetVarifyRsp& from) {
-    GetVarifyRsp::MergeImpl(*this, from);
+  void MergeFrom( const GetVerifyRsp& from) {
+    GetVerifyRsp::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -312,15 +312,15 @@ class GetVarifyRsp final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(GetVarifyRsp* other);
+  void InternalSwap(GetVerifyRsp* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "message.GetVarifyRsp";
+    return "message.GetVerifyRsp";
   }
   protected:
-  explicit GetVarifyRsp(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit GetVerifyRsp(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -375,7 +375,7 @@ class GetVarifyRsp final :
   void _internal_set_error(int32_t value);
   public:
 
-  // @@protoc_insertion_point(class_scope:message.GetVarifyRsp)
+  // @@protoc_insertion_point(class_scope:message.GetVerifyRsp)
  private:
   class _Internal;
 
@@ -400,44 +400,44 @@ class GetVarifyRsp final :
   #pragma GCC diagnostic push
   #pragma GCC diagnostic ignored "-Wstrict-aliasing"
 #endif  // __GNUC__
-// GetVarifyReq
+// GetVerifyReq
 
 // string email = 1;
-inline void GetVarifyReq::clear_email() {
+inline void GetVerifyReq::clear_email() {
   _impl_.email_.ClearToEmpty();
 }
-inline const std::string& GetVarifyReq::email() const {
-  // @@protoc_insertion_point(field_get:message.GetVarifyReq.email)
+inline const std::string& GetVerifyReq::email() const {
+  // @@protoc_insertion_point(field_get:message.GetVerifyReq.email)
   return _internal_email();
 }
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
-void GetVarifyReq::set_email(ArgT0&& arg0, ArgT... args) {
+void GetVerifyReq::set_email(ArgT0&& arg0, ArgT... args) {
  
  _impl_.email_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:message.GetVarifyReq.email)
+  // @@protoc_insertion_point(field_set:message.GetVerifyReq.email)
 }
-inline std::string* GetVarifyReq::mutable_email() {
+inline std::string* GetVerifyReq::mutable_email() {
   std::string* _s = _internal_mutable_email();
-  // @@protoc_insertion_point(field_mutable:message.GetVarifyReq.email)
+  // @@protoc_insertion_point(field_mutable:message.GetVerifyReq.email)
   return _s;
 }
-inline const std::string& GetVarifyReq::_internal_email() const {
+inline const std::string& GetVerifyReq::_internal_email() const {
   return _impl_.email_.Get();
 }
-inline void GetVarifyReq::_internal_set_email(const std::string& value) {
+inline void GetVerifyReq::_internal_set_email(const std::string& value) {
   
   _impl_.email_.Set(value, GetArenaForAllocation());
 }
-inline std::string* GetVarifyReq::_internal_mutable_email() {
+inline std::string* GetVerifyReq::_internal_mutable_email() {
   
   return _impl_.email_.Mutable(GetArenaForAllocation());
 }
-inline std::string* GetVarifyReq::release_email() {
-  // @@protoc_insertion_point(field_release:message.GetVarifyReq.email)
+inline std::string* GetVerifyReq::release_email() {
+  // @@protoc_insertion_point(field_release:message.GetVerifyReq.email)
   return _impl_.email_.Release();
 }
-inline void GetVarifyReq::set_allocated_email(std::string* email) {
+inline void GetVerifyReq::set_allocated_email(std::string* email) {
   if (email != nullptr) {
     
   } else {
@@ -449,69 +449,69 @@ inline void GetVarifyReq::set_allocated_email(std::string* email) {
     _impl_.email_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:message.GetVarifyReq.email)
+  // @@protoc_insertion_point(field_set_allocated:message.GetVerifyReq.email)
 }
 
 // -------------------------------------------------------------------
 
-// GetVarifyRsp
+// GetVerifyRsp
 
 // int32 error = 1;
-inline void GetVarifyRsp::clear_error() {
+inline void GetVerifyRsp::clear_error() {
   _impl_.error_ = 0;
 }
-inline int32_t GetVarifyRsp::_internal_error() const {
+inline int32_t GetVerifyRsp::_internal_error() const {
   return _impl_.error_;
 }
-inline int32_t GetVarifyRsp::error() const {
-  // @@protoc_insertion_point(field_get:message.GetVarifyRsp.error)
+inline int32_t GetVerifyRsp::error() const {
+  // @@protoc_insertion_point(field_get:message.GetVerifyRsp.error)
   return _internal_error();
 }
-inline void GetVarifyRsp::_internal_set_error(int32_t value) {
+inline void GetVerifyRsp::_internal_set_error(int32_t value) {
   
   _impl_.error_ = value;
 }
-inline void GetVarifyRsp::set_error(int32_t value) {
+inline void GetVerifyRsp::set_error(int32_t value) {
   _internal_set_error(value);
-  // @@protoc_insertion_point(field_set:message.GetVarifyRsp.error)
+  // @@protoc_insertion_point(field_set:message.GetVerifyRsp.error)
 }
 
 // string email = 2;
-inline void GetVarifyRsp::clear_email() {
+inline void GetVerifyRsp::clear_email() {
   _impl_.email_.ClearToEmpty();
 }
-inline const std::string& GetVarifyRsp::email() const {
-  // @@protoc_insertion_point(field_get:message.GetVarifyRsp.email)
+inline const std::string& GetVerifyRsp::email() const {
+  // @@protoc_insertion_point(field_get:message.GetVerifyRsp.email)
   return _internal_email();
 }
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
-void GetVarifyRsp::set_email(ArgT0&& arg0, ArgT... args) {
+void GetVerifyRsp::set_email(ArgT0&& arg0, ArgT... args) {
  
  _impl_.email_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:message.GetVarifyRsp.email)
+  // @@protoc_insertion_point(field_set:message.GetVerifyRsp.email)
 }
-inline std::string* GetVarifyRsp::mutable_email() {
+inline std::string* GetVerifyRsp::mutable_email() {
   std::string* _s = _internal_mutable_email();
-  // @@protoc_insertion_point(field_mutable:message.GetVarifyRsp.email)
+  // @@protoc_insertion_point(field_mutable:message.GetVerifyRsp.email)
   return _s;
 }
-inline const std::string& GetVarifyRsp::_internal_email() const {
+inline const std::string& GetVerifyRsp::_internal_email() const {
   return _impl_.email_.Get();
 }
-inline void GetVarifyRsp::_internal_set_email(const std::string& value) {
+inline void GetVerifyRsp::_internal_set_email(const std::string& value) {
   
   _impl_.email_.Set(value, GetArenaForAllocation());
 }
-inline std::string* GetVarifyRsp::_internal_mutable_email() {
+inline std::string* GetVerifyRsp::_internal_mutable_email() {
   
   return _impl_.email_.Mutable(GetArenaForAllocation());
 }
-inline std::string* GetVarifyRsp::release_email() {
-  // @@protoc_insertion_point(field_release:message.GetVarifyRsp.email)
+inline std::string* GetVerifyRsp::release_email() {
+  // @@protoc_insertion_point(field_release:message.GetVerifyRsp.email)
   return _impl_.email_.Release();
 }
-inline void GetVarifyRsp::set_allocated_email(std::string* email) {
+inline void GetVerifyRsp::set_allocated_email(std::string* email) {
   if (email != nullptr) {
     
   } else {
@@ -523,45 +523,45 @@ inline void GetVarifyRsp::set_allocated_email(std::string* email) {
     _impl_.email_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:message.GetVarifyRsp.email)
+  // @@protoc_insertion_point(field_set_allocated:message.GetVerifyRsp.email)
 }
 
 // string code = 3;
-inline void GetVarifyRsp::clear_code() {
+inline void GetVerifyRsp::clear_code() {
   _impl_.code_.ClearToEmpty();
 }
-inline const std::string& GetVarifyRsp::code() const {
-  // @@protoc_insertion_point(field_get:message.GetVarifyRsp.code)
+inline const std::string& GetVerifyRsp::code() const {
+  // @@protoc_insertion_point(field_get:message.GetVerifyRsp.code)
   return _internal_code();
 }
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
-void GetVarifyRsp::set_code(ArgT0&& arg0, ArgT... args) {
+void GetVerifyRsp::set_code(ArgT0&& arg0, ArgT... args) {
  
  _impl_.code_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:message.GetVarifyRsp.code)
+  // @@protoc_insertion_point(field_set:message.GetVerifyRsp.code)
 }
-inline std::string* GetVarifyRsp::mutable_code() {
+inline std::string* GetVerifyRsp::mutable_code() {
   std::string* _s = _internal_mutable_code();
-  // @@protoc_insertion_point(field_mutable:message.GetVarifyRsp.code)
+  // @@protoc_insertion_point(field_mutable:message.GetVerifyRsp.code)
   return _s;
 }
-inline const std::string& GetVarifyRsp::_internal_code() const {
+inline const std::string& GetVerifyRsp::_internal_code() const {
   return _impl_.code_.Get();
 }
-inline void GetVarifyRsp::_internal_set_code(const std::string& value) {
+inline void GetVerifyRsp::_internal_set_code(const std::string& value) {
   
   _impl_.code_.Set(value, GetArenaForAllocation());
 }
-inline std::string* GetVarifyRsp::_internal_mutable_code() {
+inline std::string* GetVerifyRsp::_internal_mutable_code() {
   
   return _impl_.code_.Mutable(GetArenaForAllocation());
 }
-inline std::string* GetVarifyRsp::release_code() {
-  // @@protoc_insertion_point(field_release:message.GetVarifyRsp.code)
+inline std::string* GetVerifyRsp::release_code() {
+  // @@protoc_insertion_point(field_release:message.GetVerifyRsp.code)
   return _impl_.code_.Release();
 }
-inline void GetVarifyRsp::set_allocated_code(std::string* code) {
+inline void GetVerifyRsp::set_allocated_code(std::string* code) {
   if (code != nullptr) {
     
   } else {
@@ -573,7 +573,7 @@ inline void GetVarifyRsp::set_allocated_code(std::string* code) {
     _impl_.code_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:message.GetVarifyRsp.code)
+  // @@protoc_insertion_point(field_set_allocated:message.GetVerifyRsp.code)
 }
 
 #ifdef __GNUC__

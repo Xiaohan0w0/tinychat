@@ -53,10 +53,10 @@ RM = E:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\cpp_project\Tiny-Chat\server\GateServer
+CMAKE_SOURCE_DIR = E:\cpp_project\TinyChat\server\GateServer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\cpp_project\Tiny-Chat\server\GateServer\build
+CMAKE_BINARY_DIR = E:\cpp_project\TinyChat\server\GateServer\build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -82,14 +82,14 @@ clean: CMakeFiles/GateServer.dir/clean
 CMakeFiles/generate_proto.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\generate_proto.dir\build.make CMakeFiles/generate_proto.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\generate_proto.dir\build.make CMakeFiles/generate_proto.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\cpp_project\Tiny-Chat\server\GateServer\build\CMakeFiles --progress-num=7 "Built target generate_proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles --progress-num=9 "Built target generate_proto"
 .PHONY : CMakeFiles/generate_proto.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/generate_proto.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\cpp_project\Tiny-Chat\server\GateServer\build\CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/generate_proto.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\cpp_project\Tiny-Chat\server\GateServer\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles 0
 .PHONY : CMakeFiles/generate_proto.dir/rule
 
 # Convenience name for target.
@@ -108,14 +108,14 @@ CMakeFiles/generate_proto.dir/clean:
 CMakeFiles/GateServer.dir/all: CMakeFiles/generate_proto.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\cpp_project\Tiny-Chat\server\GateServer\build\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target GateServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target GateServer"
 .PHONY : CMakeFiles/GateServer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GateServer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\cpp_project\Tiny-Chat\server\GateServer\build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/GateServer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\cpp_project\Tiny-Chat\server\GateServer\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles 0
 .PHONY : CMakeFiles/GateServer.dir/rule
 
 # Convenience name for target.

@@ -1,4 +1,4 @@
-E:/cpp_project/Tiny-Chat/server/GateServer/build/CMakeFiles/generate_proto.dir
-E:/cpp_project/Tiny-Chat/server/GateServer/build/CMakeFiles/GateServer.dir
-E:/cpp_project/Tiny-Chat/server/GateServer/build/CMakeFiles/edit_cache.dir
-E:/cpp_project/Tiny-Chat/server/GateServer/build/CMakeFiles/rebuild_cache.dir
+E:/cpp_project/TinyChat/server/GateServer/build/CMakeFiles/generate_proto.dir
+E:/cpp_project/TinyChat/server/GateServer/build/CMakeFiles/GateServer.dir
+E:/cpp_project/TinyChat/server/GateServer/build/CMakeFiles/edit_cache.dir
+E:/cpp_project/TinyChat/server/GateServer/build/CMakeFiles/rebuild_cache.dir

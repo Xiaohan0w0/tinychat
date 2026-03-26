@@ -52,10 +52,10 @@ RM = E:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\cpp_project\Tiny-Chat\server\GateServer
+CMAKE_SOURCE_DIR = E:\cpp_project\TinyChat\server\GateServer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\cpp_project\Tiny-Chat\server\GateServer\build
+CMAKE_BINARY_DIR = E:\cpp_project\TinyChat\server\GateServer\build
 
 # Utility rule file for generate_proto.
 
@@ -66,15 +66,24 @@ include CMakeFiles/generate_proto.dir/compiler_depend.make
 include CMakeFiles/generate_proto.dir/progress.make
 
 CMakeFiles/generate_proto: proto_generated/message.pb.cc
+CMakeFiles/generate_proto: proto_generated/message.grpc.pb.cc
 
-proto_generated/message.pb.cc: E:/cpp_project/Tiny-Chat/server/GateServer/proto/message.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=E:\cpp_project\Tiny-Chat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating message.pb.cc and message.pb.h"
-	E:\cppsoft\grpc_v1.50\installed\bin\protoc.exe --proto_path=E:/cpp_project/Tiny-Chat/server/GateServer/proto --cpp_out=E:/cpp_project/Tiny-Chat/server/GateServer/build/proto_generated E:/cpp_project/Tiny-Chat/server/GateServer/proto/message.proto
+proto_generated/message.pb.cc: E:/cpp_project/TinyChat/server/GateServer/proto/message.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating message.pb.cc, .pb.h, .grpc.pb.cc and .grpc.pb.h"
+	E:\cppsoft\grpc_v1.50\installed\bin\protoc.exe --proto_path=E:/cpp_project/TinyChat/server/GateServer/proto --cpp_out=E:/cpp_project/TinyChat/server/GateServer/build/proto_generated --grpc_out=E:/cpp_project/TinyChat/server/GateServer/build/proto_generated --plugin=protoc-gen-grpc=E:/cppsoft/grpc_v1.50/installed/bin/grpc_cpp_plugin.exe E:/cpp_project/TinyChat/server/GateServer/proto/message.proto
 
 proto_generated/message.pb.h: proto_generated/message.pb.cc
 	@$(CMAKE_COMMAND) -E touch_nocreate proto_generated\message.pb.h
 
+proto_generated/message.grpc.pb.cc: proto_generated/message.pb.cc
+	@$(CMAKE_COMMAND) -E touch_nocreate proto_generated\message.grpc.pb.cc
+
+proto_generated/message.grpc.pb.h: proto_generated/message.pb.cc
+	@$(CMAKE_COMMAND) -E touch_nocreate proto_generated\message.grpc.pb.h
+
 generate_proto: CMakeFiles/generate_proto
+generate_proto: proto_generated/message.grpc.pb.cc
+generate_proto: proto_generated/message.grpc.pb.h
 generate_proto: proto_generated/message.pb.cc
 generate_proto: proto_generated/message.pb.h
 generate_proto: CMakeFiles/generate_proto.dir/build.make
@@ -89,6 +98,6 @@ CMakeFiles/generate_proto.dir/clean:
 .PHONY : CMakeFiles/generate_proto.dir/clean
 
 CMakeFiles/generate_proto.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\cpp_project\Tiny-Chat\server\GateServer E:\cpp_project\Tiny-Chat\server\GateServer E:\cpp_project\Tiny-Chat\server\GateServer\build E:\cpp_project\Tiny-Chat\server\GateServer\build E:\cpp_project\Tiny-Chat\server\GateServer\build\CMakeFiles\generate_proto.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\cpp_project\TinyChat\server\GateServer E:\cpp_project\TinyChat\server\GateServer E:\cpp_project\TinyChat\server\GateServer\build E:\cpp_project\TinyChat\server\GateServer\build E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles\generate_proto.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/generate_proto.dir/depend
 
