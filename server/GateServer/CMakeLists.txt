@@ -77,48 +77,69 @@ target_link_libraries(GateServer PRIVATE
     E:/cppsoft/boost_1_90_0/installed/lib/libboost_filesystem-mgw13-mt-x64-1_90.a
     E:/cppsoft/boost_1_90_0/installed/lib/libboost_atomic-mgw13-mt-x64-1_90.a
 
-    # Windows 套接字
+    # ========== gRPC / Protobuf ==========
+    # 顺序：高层库在前，被依赖的库在后
+    E:/cppsoft/grpc_v1.50/installed/lib/libgrpc++.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libgrpc++_reflection.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libgrpc.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libgpr.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libprotobuf.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libaddress_sorting.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libcares.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libupb.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libre2.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libssl.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libcrypto.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libzlibstatic.a
+
+    # Windows 套接字 (必须在 gRPC 之后)
     ws2_32
     mswsock
 
-    # ========== gRPC / Protobuf ==========
-    E:/cppsoft/grpc_v1.50/installed/lib/libprotobuf.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libgpr.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libgrpc.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libgrpc++.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libgrpc++_reflection.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libaddress_sorting.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libcares.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libzlibstatic.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libupb.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libssl.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libcrypto.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libre2.a
-
     # ========== Abseil 全量库 ==========
-    # 基础库（被依赖的放在后面）
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_statusor.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_status.a
+    # 顺序：被依赖的库放在后面
+    # Flags (高层)
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_internal.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_marshalling.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_parse.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_program_name.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_usage.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_usage_internal.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_internal.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_marshalling.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_config.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_program_name.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_commandlineflag.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_commandlineflag_internal.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_private_handle_accessor.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_flags_reflection.a
+    # Status
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_statusor.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_status.a
+    # Synchronization
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_synchronization.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_graphcycles_internal.a
+    # Time
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_time.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_time_zone.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_civil_time.a
+    # Cord (字符串相关，依赖较多)
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_cord.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_cordz_info.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_cordz_handle.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_cordz_functions.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_cordz_sample_token.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_cord_internal.a
+    # Hash
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_hash.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_low_level_hash.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_hashtablez_sampler.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_raw_hash_set.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_city.a
+    # Strings
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_str_format_internal.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_strings.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_strings_internal.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_str_format_internal.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_strerror.a
+    # Debugging
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_symbolize.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_stacktrace.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_debugging_internal.a
@@ -127,18 +148,20 @@ target_link_libraries(GateServer PRIVATE
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_failure_signal_handler.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_leak_check.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_scoped_set_env.a
+    # Random
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_distributions.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_distribution_test_util.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_seed_sequences.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_pool_urbg.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_randen.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_randen_hwaes.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_randen_hwaes_impl.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_randen_slow.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_seed_material.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_platform.a
+    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_internal_distribution_test_util.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_seed_gen_exception.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_random_seed_sequences.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_periodic_sampler.a
-    E:/cppsoft/grpc_v1.50/installed/lib/libabsl_city.a
+    # 基础库（放在最后）
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_base.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_spinlock_wait.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_malloc_internal.a
@@ -151,6 +174,7 @@ target_link_libraries(GateServer PRIVATE
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_bad_optional_access.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_bad_variant_access.a
 
-    # Windows 调试库 (必须在 Abseil 库之后)
+    # Windows 系统库 (必须在所有库之后)
     DbgHelp
+    bcrypt
 )
