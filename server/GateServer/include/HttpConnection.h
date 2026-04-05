@@ -5,9 +5,9 @@ class HttpConnection : public std::enable_shared_from_this<HttpConnection>
 {
 public:
     friend class LogicSystem;
-    HttpConnection(tcp::socket socket);
+    HttpConnection(net::io_context& ioc);
     void Start();
-    ~HttpConnection();
+    tcp::socket &GetSocket();
 
 private:
     void CheckDeadline();

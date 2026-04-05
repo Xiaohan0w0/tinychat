@@ -10,11 +10,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "E:/cpp_project/TinyChat/server/GateServer/build/proto_generated/message.grpc.pb.cc" "CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.obj" "gcc" "CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.obj.d"
   "E:/cpp_project/TinyChat/server/GateServer/build/proto_generated/message.pb.cc" "CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.obj" "gcc" "CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.obj.d"
+  "E:/cpp_project/TinyChat/server/GateServer/src/AsioIOServicePool.cpp" "CMakeFiles/GateServer.dir/src/AsioIOServicePool.cpp.obj" "gcc" "CMakeFiles/GateServer.dir/src/AsioIOServicePool.cpp.obj.d"
   "E:/cpp_project/TinyChat/server/GateServer/src/CServer.cpp" "CMakeFiles/GateServer.dir/src/CServer.cpp.obj" "gcc" "CMakeFiles/GateServer.dir/src/CServer.cpp.obj.d"
   "E:/cpp_project/TinyChat/server/GateServer/src/ConfigMgr.cpp" "CMakeFiles/GateServer.dir/src/ConfigMgr.cpp.obj" "gcc" "CMakeFiles/GateServer.dir/src/ConfigMgr.cpp.obj.d"
+  "E:/cpp_project/TinyChat/server/GateServer/src/GateServer.cpp" "CMakeFiles/GateServer.dir/src/GateServer.cpp.obj" "gcc" "CMakeFiles/GateServer.dir/src/GateServer.cpp.obj.d"
   "E:/cpp_project/TinyChat/server/GateServer/src/HttpConnection.cpp" "CMakeFiles/GateServer.dir/src/HttpConnection.cpp.obj" "gcc" "CMakeFiles/GateServer.dir/src/HttpConnection.cpp.obj.d"
   "E:/cpp_project/TinyChat/server/GateServer/src/LogicSystem.cpp" "CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj" "gcc" "CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj.d"
-  "E:/cpp_project/TinyChat/server/GateServer/src/test.cpp" "CMakeFiles/GateServer.dir/src/test.cpp.obj" "gcc" "CMakeFiles/GateServer.dir/src/test.cpp.obj.d"
+  "E:/cpp_project/TinyChat/server/GateServer/src/VerifyGrpcClient.cpp" "CMakeFiles/GateServer.dir/src/VerifyGrpcClient.cpp.obj" "gcc" "CMakeFiles/GateServer.dir/src/VerifyGrpcClient.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

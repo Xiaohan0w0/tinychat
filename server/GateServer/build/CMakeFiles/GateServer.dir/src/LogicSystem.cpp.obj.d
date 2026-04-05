@@ -2105,6 +2105,11 @@ CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj: \
  E:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
  E:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fstream.tcc \
  E:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
+ E:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/queue \
+ E:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/deque \
+ E:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_deque.h \
+ E:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/deque.tcc \
+ E:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_queue.h \
  E:/cppsoft/jsoncpp-1.9.7/installed/include/json/json.h \
  E:/cppsoft/jsoncpp-1.9.7/installed/include/json/config.h \
  E:/cppsoft/jsoncpp-1.9.7/installed/include/json/allocator.h \
@@ -2117,14 +2122,14 @@ CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj: \
  E:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
  E:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
  E:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
- E:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/deque \
- E:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_deque.h \
- E:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/deque.tcc \
  E:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stack \
  E:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_stack.h \
  E:/cppsoft/jsoncpp-1.9.7/installed/include/json/writer.h \
  E:/cppsoft/jsoncpp-1.9.7/installed/include/json/value.h \
  E:/cppsoft/jsoncpp-1.9.7/installed/include/json/reader.h \
+ E:/cppsoft/hiredis-master/hiredis.h E:/cppsoft/hiredis-master/read.h \
+ E:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/time.h \
+ E:/cppsoft/hiredis-master/sds.h E:/cppsoft/hiredis-master/alloc.h \
  E:/cpp_project/TinyChat/server/GateServer/include/Singleton.h \
  E:/cpp_project/TinyChat/server/GateServer/include/HttpConnection.h \
  E:/cpp_project/TinyChat/server/GateServer/include/VerifyGrpcClient.h \
@@ -2201,7 +2206,6 @@ CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj: \
  E:/cppsoft/grpc_v1.50/installed/include/absl/base/macros.h \
  E:/cppsoft/grpc_v1.50/installed/include/absl/time/clock.h \
  E:/cppsoft/grpc_v1.50/installed/include/absl/time/time.h \
- E:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/time.h \
  E:/cppsoft/grpc_v1.50/installed/include/absl/strings/string_view.h \
  E:/cppsoft/grpc_v1.50/installed/include/absl/base/internal/throw_delegate.h \
  E:/cppsoft/grpc_v1.50/installed/include/absl/time/civil_time.h \

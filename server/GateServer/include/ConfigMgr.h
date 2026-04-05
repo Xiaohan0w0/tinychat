@@ -31,7 +31,7 @@ struct SectionInfo
 class ConfigMgr
 {
 public:
-    ConfigMgr();
+    
     ~ConfigMgr();
     SectionInfo operator[](const std::string& section)
     {
@@ -52,7 +52,14 @@ public:
     {
         _config_map = src._config_map;
     }
+    static ConfigMgr& GetInstance()
+    {
+        // 生命周期和进程同步的，可见范围是局部函数的
+        static ConfigMgr instance;
+        return instance;
+    }
 private:
+    ConfigMgr();
     std::unordered_map<std::string, SectionInfo> _config_map;
 };
 

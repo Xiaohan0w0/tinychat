@@ -189,6 +189,30 @@ proto_generated/message.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.s
 .PHONY : proto_generated/message.pb.cc.s
 
+src/AsioIOServicePool.obj: src/AsioIOServicePool.cpp.obj
+.PHONY : src/AsioIOServicePool.obj
+
+# target to build an object file
+src/AsioIOServicePool.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/AsioIOServicePool.cpp.obj
+.PHONY : src/AsioIOServicePool.cpp.obj
+
+src/AsioIOServicePool.i: src/AsioIOServicePool.cpp.i
+.PHONY : src/AsioIOServicePool.i
+
+# target to preprocess a source file
+src/AsioIOServicePool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/AsioIOServicePool.cpp.i
+.PHONY : src/AsioIOServicePool.cpp.i
+
+src/AsioIOServicePool.s: src/AsioIOServicePool.cpp.s
+.PHONY : src/AsioIOServicePool.s
+
+# target to generate assembly for a file
+src/AsioIOServicePool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/AsioIOServicePool.cpp.s
+.PHONY : src/AsioIOServicePool.cpp.s
+
 src/CServer.obj: src/CServer.cpp.obj
 .PHONY : src/CServer.obj
 
@@ -236,6 +260,30 @@ src/ConfigMgr.s: src/ConfigMgr.cpp.s
 src/ConfigMgr.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/ConfigMgr.cpp.s
 .PHONY : src/ConfigMgr.cpp.s
+
+src/GateServer.obj: src/GateServer.cpp.obj
+.PHONY : src/GateServer.obj
+
+# target to build an object file
+src/GateServer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/GateServer.cpp.obj
+.PHONY : src/GateServer.cpp.obj
+
+src/GateServer.i: src/GateServer.cpp.i
+.PHONY : src/GateServer.i
+
+# target to preprocess a source file
+src/GateServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/GateServer.cpp.i
+.PHONY : src/GateServer.cpp.i
+
+src/GateServer.s: src/GateServer.cpp.s
+.PHONY : src/GateServer.s
+
+# target to generate assembly for a file
+src/GateServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/GateServer.cpp.s
+.PHONY : src/GateServer.cpp.s
 
 src/HttpConnection.obj: src/HttpConnection.cpp.obj
 .PHONY : src/HttpConnection.obj
@@ -285,29 +333,29 @@ src/LogicSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/LogicSystem.cpp.s
 .PHONY : src/LogicSystem.cpp.s
 
-src/test.obj: src/test.cpp.obj
-.PHONY : src/test.obj
+src/VerifyGrpcClient.obj: src/VerifyGrpcClient.cpp.obj
+.PHONY : src/VerifyGrpcClient.obj
 
 # target to build an object file
-src/test.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/test.cpp.obj
-.PHONY : src/test.cpp.obj
+src/VerifyGrpcClient.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/VerifyGrpcClient.cpp.obj
+.PHONY : src/VerifyGrpcClient.cpp.obj
 
-src/test.i: src/test.cpp.i
-.PHONY : src/test.i
+src/VerifyGrpcClient.i: src/VerifyGrpcClient.cpp.i
+.PHONY : src/VerifyGrpcClient.i
 
 # target to preprocess a source file
-src/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/test.cpp.i
-.PHONY : src/test.cpp.i
+src/VerifyGrpcClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/VerifyGrpcClient.cpp.i
+.PHONY : src/VerifyGrpcClient.cpp.i
 
-src/test.s: src/test.cpp.s
-.PHONY : src/test.s
+src/VerifyGrpcClient.s: src/VerifyGrpcClient.cpp.s
+.PHONY : src/VerifyGrpcClient.s
 
 # target to generate assembly for a file
-src/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/test.cpp.s
-.PHONY : src/test.cpp.s
+src/VerifyGrpcClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/VerifyGrpcClient.cpp.s
+.PHONY : src/VerifyGrpcClient.cpp.s
 
 # Help Target
 help:
@@ -325,21 +373,27 @@ help:
 	@echo ... proto_generated/message.pb.obj
 	@echo ... proto_generated/message.pb.i
 	@echo ... proto_generated/message.pb.s
+	@echo ... src/AsioIOServicePool.obj
+	@echo ... src/AsioIOServicePool.i
+	@echo ... src/AsioIOServicePool.s
 	@echo ... src/CServer.obj
 	@echo ... src/CServer.i
 	@echo ... src/CServer.s
 	@echo ... src/ConfigMgr.obj
 	@echo ... src/ConfigMgr.i
 	@echo ... src/ConfigMgr.s
+	@echo ... src/GateServer.obj
+	@echo ... src/GateServer.i
+	@echo ... src/GateServer.s
 	@echo ... src/HttpConnection.obj
 	@echo ... src/HttpConnection.i
 	@echo ... src/HttpConnection.s
 	@echo ... src/LogicSystem.obj
 	@echo ... src/LogicSystem.i
 	@echo ... src/LogicSystem.s
-	@echo ... src/test.obj
-	@echo ... src/test.i
-	@echo ... src/test.s
+	@echo ... src/VerifyGrpcClient.obj
+	@echo ... src/VerifyGrpcClient.i
+	@echo ... src/VerifyGrpcClient.s
 .PHONY : help
 
 

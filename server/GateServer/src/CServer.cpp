@@ -1,5 +1,5 @@
 #include "CServer.h"
-
+#include "AsioIOServicePool.h"
 CServer::CServer(boost::asio::io_context &ioc, unsigned short &port)
     : _ioc(ioc),
     _acceptor(ioc, tcp::endpoint(tcp::v4(), port)),
@@ -10,25 +10,23 @@ CServer::CServer(boost::asio::io_context &ioc, unsigned short &port)
 
 void CServer::Start()
 {
-    auto self=shared_from_this();
-    _acceptor.async_accept(_socket, [self](boost::system::error_code ec)
+    auto self = shared_from_this();
+    auto& io_context = AsioIOServicePool::GetInstance()->GetIOService();
+    std::shared_ptr<HttpConnection> new_con = std::make_shared<HttpConnection>(io_context);
+    
+    _acceptor.async_accept(new_con->GetSocket(), [self, new_con](boost::system::error_code ec)
     {
-        try
+        // 无论成功失败，都继续监听下一个连接
+        if (!ec)
         {
-            // 出错放弃这个连接，继续监听下一个连接
-            if(ec)
-            {
-                self->Start();
-                return;
-            }
-            // 创建新连接，并且创建HttpConnection类管理这个连接
-            std::make_shared<HttpConnection>(std::move(self->_socket))->Start();
-            // 继续监听下一个连接
-            self->Start();
-        }catch(std::exception& exp)
-        {
-            
+            new_con->Start();
         }
+        else
+        {
+            std::cerr << "Accept error: " << ec.message() << std::endl;
+        }
+        self->Start();
     });
 }
+
 

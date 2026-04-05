@@ -62,7 +62,7 @@ LogicSystem::LogicSystem()
                     root["error"] = ErrorCodes::Error_Json;
                     std::string jsonstr = root.toStyledString();
                     beast::ostream(connection->_response.body()) << jsonstr << std::endl;
-                    return true;
+                    return;
                 }
 
                 if (!src_root.isMember("email"))
@@ -71,7 +71,7 @@ LogicSystem::LogicSystem()
                     root["error"] = ErrorCodes::Error_Json;
                     std::string jsonstr = root.toStyledString();
                     beast::ostream(connection->_response.body()) << jsonstr << std::endl;
-                    return true;
+                    return;
                 }
 
                 auto email = src_root["email"].asString();
@@ -81,6 +81,5 @@ LogicSystem::LogicSystem()
                 root["email"] = src_root["email"];
                 std::string jsonstr = root.toStyledString();
                 beast::ostream(connection->_response.body()) << jsonstr << std::endl;
-                return true;
             });
 }

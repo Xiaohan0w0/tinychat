@@ -1,11 +1,10 @@
 #include "HttpConnection.h"
 #include "LogicSystem.h"
 
-HttpConnection::HttpConnection(tcp::socket socket)
-    : _socket(std::move(socket))
+HttpConnection::HttpConnection(net::io_context& ioc)
+    : _socket(ioc)
 {
     
-
 }
 
 void HttpConnection::Start()
@@ -13,26 +12,20 @@ void HttpConnection::Start()
     auto self = shared_from_this();
     http::async_read(_socket, _buffer, _request, [self](beast::error_code ec, size_t bytes_transferred)
                     {
-        try
+        if (ec)
         {
-            if (ec)
-            {
-                std::cout << "http read err is " << ec.what() << std::endl;
-                return;
-            }
-            boost::ignore_unused(bytes_transferred);
-            self->CheckDeadline();
-            self->HandleReq();
+            std::cerr << "HTTP read error: " << ec.message() << std::endl;
+            return;
         }
-        catch (const std::exception &exp)
-        {
-            std::cout << "Exception: " << exp.what() << std::endl;
-        } });
+        boost::ignore_unused(bytes_transferred);
+        self->CheckDeadline();
+        self->HandleReq();
+    });
 }
 
-HttpConnection::~HttpConnection()
+tcp::socket &HttpConnection::GetSocket()
 {
-
+    return _socket;
 }
 
 // 网络传输处理，socket数据发送
@@ -212,4 +205,5 @@ void HttpConnection::PreParseGetParam()
             _get_params[key] = value;
         }
     }
+    
 }

@@ -12,41 +12,35 @@ using message::GetVerifyReq;
 using message::GetVerifyRsp;
 using message::VerifyService;
 
+
+class RPConPool
+{
+public:
+    RPConPool(size_t poolsize,std::string host,std::string port);
+    ~RPConPool();
+    void close();
+    std::unique_ptr<VerifyService::Stub> getConnection();
+    void returnConnection(std::unique_ptr<VerifyService::Stub> context);
+private:
+    std::atomic<bool> b_stop_;
+    size_t poolSize_;
+    std::string host_;
+    std::string port_;
+    std::mutex mutex_;
+    std::condition_variable cond_;
+    std::queue<std::unique_ptr<VerifyService::Stub>> connections_;
+};
+
 class VerifyGrpcClient : public Singleton<VerifyGrpcClient>
 {
     friend class Singleton<VerifyGrpcClient>;
 public:
-    GetVerifyRsp GetVerifyCode(const std::string& email)
-    {
-        ClientContext context;
-        GetVerifyReq request;
-        GetVerifyRsp response;
-        request.set_email(email);
+    GetVerifyRsp GetVerifyCode(const std::string &email);
+    ~VerifyGrpcClient() = default;
 
-        Status status = stub_->GetVerifyCode(&context, request, &response);
-        if (status.ok())
-        {
-            return response;
-        }
-        else
-        {
-            response.set_error(ErrorCodes::RPCFailed);
-            return response;
-        }
-    }
-private:
-    VerifyGrpcClient()
-    {
-        // 不使用TLS，采用明文传输，连接 gRPC 服务器地址 0.0.0.0:50051
-        // channel 管理与服务端的连接，包括连接的创建、维护和关闭等
-        // 一个channel可以创建多个stub，每个stub可以并行调用服务端的方法，但是每个stub只能调用一个服务
-        std::shared_ptr<Channel> channel=grpc::CreateChannel("127.0.0.1:50051",grpc::InsecureChannelCredentials());
-        stub_=VerifyService::NewStub(channel);
-    }
-public:
-    ~VerifyGrpcClient()=default;
 private:
     // stub客户端存根，封装了 RPC 调用能力，用于调用服务端的方法，传递消息，依赖channel提供网络连接
     // 好比channel是电话线路，stub是电话听筒
-    std::unique_ptr<VerifyService::Stub> stub_;
+    VerifyGrpcClient();
+    std::unique_ptr<RPConPool> pool_;
 };

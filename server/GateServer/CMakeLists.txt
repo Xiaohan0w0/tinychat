@@ -9,6 +9,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(GRPC_INSTALL_DIR E:/cppsoft/grpc_v1.50/installed)
 set(BOOST_DIR      E:/cppsoft/boost_1_90_0/installed)
 set(JSONCPP_DIR   E:/cppsoft/jsoncpp-1.9.7/installed)
+set(HIREDIS_DIR    E:/cppsoft/hiredis-master)
 
 # 设置输出目录
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
@@ -65,6 +66,7 @@ target_include_directories(GateServer PRIVATE
     ${BOOST_DIR}/include/boost-1_90
     ${JSONCPP_DIR}/include
     ${GRPC_INSTALL_DIR}/include
+    ${HIREDIS_DIR}
 )
 
 
@@ -174,7 +176,17 @@ target_link_libraries(GateServer PRIVATE
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_bad_optional_access.a
     E:/cppsoft/grpc_v1.50/installed/lib/libabsl_bad_variant_access.a
 
+    # hiredis .dll.a 导入库 (编译用) 这里不是真正的静态库 .dll 动态库 (运行用)
+    E:/cppsoft/hiredis-master/installed/lib/libhiredis.dll.a
+
     # Windows 系统库 (必须在所有库之后)
     DbgHelp
     bcrypt
+)
+
+# 复制 hiredis DLL 到输出目录
+add_custom_command(TARGET GateServer POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+    "E:/cppsoft/hiredis-master/installed/lib/libhiredis.dll"
+    $<TARGET_FILE_DIR:GateServer>
 )
