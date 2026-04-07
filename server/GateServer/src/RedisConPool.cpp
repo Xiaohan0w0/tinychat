@@ -16,15 +16,13 @@ RedisConPool::RedisConPool(size_t poolSize, const char *host, int port, const ch
         }
 
         auto reply = (redisReply *)redisCommand(context, "AUTH %s", pwd);
-        if (reply->type == REDIS_REPLY_ERROR)
+        if (reply == nullptr || reply->type == REDIS_REPLY_ERROR)
         {
             std::cout << "认证失败" << std::endl;
-            // 执行成功 释放redisCommand执行后返回的redisReply所占用的内存
             freeReplyObject(reply);
             continue;
         }
 
-        // 执行成功 释放redisCommand执行后返回的redisReply所占用的内存
         freeReplyObject(reply);
         std::cout << "认证成功" << std::endl;
         connections_.push(context);
@@ -39,7 +37,7 @@ RedisConPool::RedisConPool(size_t poolSize, const char *host, int port, const ch
 					counter_ = 0;
 				}
 
-				std::this_thread::sleep_for(std::chrono::seconds(1)); // 每隔 30 秒发送一次 PING 命令
+				std::this_thread::sleep_for(std::chrono::seconds(1));
 			} });
 }
 
