@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/GateServer.dir/src/HttpConnection.cpp.obj.d"
   "CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj"
   "CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj.d"
+  "CMakeFiles/GateServer.dir/src/RedisConPool.cpp.obj"
+  "CMakeFiles/GateServer.dir/src/RedisConPool.cpp.obj.d"
   "CMakeFiles/GateServer.dir/src/RedisMgr.cpp.obj"
   "CMakeFiles/GateServer.dir/src/RedisMgr.cpp.obj.d"
   "CMakeFiles/GateServer.dir/src/VerifyGrpcClient.cpp.obj"

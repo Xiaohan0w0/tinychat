@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "E:/cpp_project/TinyChat/server/GateServer/src/GateServer.cpp" "CMakeFiles/GateServer.dir/src/GateServer.cpp.obj" "gcc" "CMakeFiles/GateServer.dir/src/GateServer.cpp.obj.d"
   "E:/cpp_project/TinyChat/server/GateServer/src/HttpConnection.cpp" "CMakeFiles/GateServer.dir/src/HttpConnection.cpp.obj" "gcc" "CMakeFiles/GateServer.dir/src/HttpConnection.cpp.obj.d"
   "E:/cpp_project/TinyChat/server/GateServer/src/LogicSystem.cpp" "CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj" "gcc" "CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj.d"
+  "E:/cpp_project/TinyChat/server/GateServer/src/RedisConPool.cpp" "CMakeFiles/GateServer.dir/src/RedisConPool.cpp.obj" "gcc" "CMakeFiles/GateServer.dir/src/RedisConPool.cpp.obj.d"
   "E:/cpp_project/TinyChat/server/GateServer/src/RedisMgr.cpp" "CMakeFiles/GateServer.dir/src/RedisMgr.cpp.obj" "gcc" "CMakeFiles/GateServer.dir/src/RedisMgr.cpp.obj.d"
   "E:/cpp_project/TinyChat/server/GateServer/src/VerifyGrpcClient.cpp" "CMakeFiles/GateServer.dir/src/VerifyGrpcClient.cpp.obj" "gcc" "CMakeFiles/GateServer.dir/src/VerifyGrpcClient.cpp.obj.d"
   )

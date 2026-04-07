@@ -158,11 +158,26 @@ CMakeFiles/GateServer.dir/src/LogicSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/src/LogicSystem.cpp.s"
 	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\cpp_project\TinyChat\server\GateServer\src\LogicSystem.cpp -o CMakeFiles\GateServer.dir\src\LogicSystem.cpp.s
 
+CMakeFiles/GateServer.dir/src/RedisConPool.cpp.obj: CMakeFiles/GateServer.dir/flags.make
+CMakeFiles/GateServer.dir/src/RedisConPool.cpp.obj: CMakeFiles/GateServer.dir/includes_CXX.rsp
+CMakeFiles/GateServer.dir/src/RedisConPool.cpp.obj: E:/cpp_project/TinyChat/server/GateServer/src/RedisConPool.cpp
+CMakeFiles/GateServer.dir/src/RedisConPool.cpp.obj: CMakeFiles/GateServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GateServer.dir/src/RedisConPool.cpp.obj"
+	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/src/RedisConPool.cpp.obj -MF CMakeFiles\GateServer.dir\src\RedisConPool.cpp.obj.d -o CMakeFiles\GateServer.dir\src\RedisConPool.cpp.obj -c E:\cpp_project\TinyChat\server\GateServer\src\RedisConPool.cpp
+
+CMakeFiles/GateServer.dir/src/RedisConPool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/src/RedisConPool.cpp.i"
+	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\cpp_project\TinyChat\server\GateServer\src\RedisConPool.cpp > CMakeFiles\GateServer.dir\src\RedisConPool.cpp.i
+
+CMakeFiles/GateServer.dir/src/RedisConPool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/src/RedisConPool.cpp.s"
+	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\cpp_project\TinyChat\server\GateServer\src\RedisConPool.cpp -o CMakeFiles\GateServer.dir\src\RedisConPool.cpp.s
+
 CMakeFiles/GateServer.dir/src/RedisMgr.cpp.obj: CMakeFiles/GateServer.dir/flags.make
 CMakeFiles/GateServer.dir/src/RedisMgr.cpp.obj: CMakeFiles/GateServer.dir/includes_CXX.rsp
 CMakeFiles/GateServer.dir/src/RedisMgr.cpp.obj: E:/cpp_project/TinyChat/server/GateServer/src/RedisMgr.cpp
 CMakeFiles/GateServer.dir/src/RedisMgr.cpp.obj: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GateServer.dir/src/RedisMgr.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GateServer.dir/src/RedisMgr.cpp.obj"
 	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/src/RedisMgr.cpp.obj -MF CMakeFiles\GateServer.dir\src\RedisMgr.cpp.obj.d -o CMakeFiles\GateServer.dir\src\RedisMgr.cpp.obj -c E:\cpp_project\TinyChat\server\GateServer\src\RedisMgr.cpp
 
 CMakeFiles/GateServer.dir/src/RedisMgr.cpp.i: cmake_force
@@ -177,7 +192,7 @@ CMakeFiles/GateServer.dir/src/VerifyGrpcClient.cpp.obj: CMakeFiles/GateServer.di
 CMakeFiles/GateServer.dir/src/VerifyGrpcClient.cpp.obj: CMakeFiles/GateServer.dir/includes_CXX.rsp
 CMakeFiles/GateServer.dir/src/VerifyGrpcClient.cpp.obj: E:/cpp_project/TinyChat/server/GateServer/src/VerifyGrpcClient.cpp
 CMakeFiles/GateServer.dir/src/VerifyGrpcClient.cpp.obj: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GateServer.dir/src/VerifyGrpcClient.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/GateServer.dir/src/VerifyGrpcClient.cpp.obj"
 	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/src/VerifyGrpcClient.cpp.obj -MF CMakeFiles\GateServer.dir\src\VerifyGrpcClient.cpp.obj.d -o CMakeFiles\GateServer.dir\src\VerifyGrpcClient.cpp.obj -c E:\cpp_project\TinyChat\server\GateServer\src\VerifyGrpcClient.cpp
 
 CMakeFiles/GateServer.dir/src/VerifyGrpcClient.cpp.i: cmake_force
@@ -192,7 +207,7 @@ CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.obj: CMakeFiles/GateServ
 CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.obj: CMakeFiles/GateServer.dir/includes_CXX.rsp
 CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.obj: proto_generated/message.pb.cc
 CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.obj: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.obj"
 	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.obj -MF CMakeFiles\GateServer.dir\proto_generated\message.pb.cc.obj.d -o CMakeFiles\GateServer.dir\proto_generated\message.pb.cc.obj -c E:\cpp_project\TinyChat\server\GateServer\build\proto_generated\message.pb.cc
 
 CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.i: cmake_force
@@ -207,7 +222,7 @@ CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.obj: CMakeFiles/Gat
 CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.obj: CMakeFiles/GateServer.dir/includes_CXX.rsp
 CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.obj: proto_generated/message.grpc.pb.cc
 CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.obj: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.obj"
 	E:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.obj -MF CMakeFiles\GateServer.dir\proto_generated\message.grpc.pb.cc.obj.d -o CMakeFiles\GateServer.dir\proto_generated\message.grpc.pb.cc.obj -c E:\cpp_project\TinyChat\server\GateServer\build\proto_generated\message.grpc.pb.cc
 
 CMakeFiles/GateServer.dir/proto_generated/message.grpc.pb.cc.i: cmake_force
@@ -226,6 +241,7 @@ GateServer_OBJECTS = \
 "CMakeFiles/GateServer.dir/src/GateServer.cpp.obj" \
 "CMakeFiles/GateServer.dir/src/HttpConnection.cpp.obj" \
 "CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj" \
+"CMakeFiles/GateServer.dir/src/RedisConPool.cpp.obj" \
 "CMakeFiles/GateServer.dir/src/RedisMgr.cpp.obj" \
 "CMakeFiles/GateServer.dir/src/VerifyGrpcClient.cpp.obj" \
 "CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.obj" \
@@ -240,6 +256,7 @@ E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateSer
 E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/src/GateServer.cpp.obj
 E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/src/HttpConnection.cpp.obj
 E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj
+E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/src/RedisConPool.cpp.obj
 E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/src/RedisMgr.cpp.obj
 E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/src/VerifyGrpcClient.cpp.obj
 E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/proto_generated/message.pb.cc.obj
@@ -329,7 +346,7 @@ E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: E:/cppsoft/hiredis
 E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/linkLibs.rsp
 E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/objects1.rsp
 E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe: CMakeFiles/GateServer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable E:\cpp_project\TinyChat\server\GateServer\bin\GateServer.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\cpp_project\TinyChat\server\GateServer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable E:\cpp_project\TinyChat\server\GateServer\bin\GateServer.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GateServer.dir\link.txt --verbose=$(VERBOSE)
 	E:\Qt\Tools\CMake_64\bin\cmake.exe -E copy_if_different E:/cppsoft/hiredis-master/installed/lib/libhiredis.dll E:/cpp_project/TinyChat/server/GateServer/bin
 

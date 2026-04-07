@@ -41,6 +41,18 @@ ConfigMgr::ConfigMgr()
     } catch (const std::exception& e) {
         std::cerr << "Error reading config file: " << e.what() << std::endl;
     }
+
+    // 输出所有的section和key-value对
+    for (const auto &section_entry : _config_map)
+    {
+        const std::string &section_name = section_entry.first;
+        SectionInfo section_config = section_entry.second;
+        std::cout << "[" << section_name << "]" << std::endl;
+        for (const auto &key_value_pair : section_config._section_datas)
+        {
+            std::cout << key_value_pair.first << "=" << key_value_pair.second << std::endl;
+        }
+    }
 }
 
 ConfigMgr::~ConfigMgr()

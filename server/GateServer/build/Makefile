@@ -333,6 +333,30 @@ src/LogicSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/LogicSystem.cpp.s
 .PHONY : src/LogicSystem.cpp.s
 
+src/RedisConPool.obj: src/RedisConPool.cpp.obj
+.PHONY : src/RedisConPool.obj
+
+# target to build an object file
+src/RedisConPool.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/RedisConPool.cpp.obj
+.PHONY : src/RedisConPool.cpp.obj
+
+src/RedisConPool.i: src/RedisConPool.cpp.i
+.PHONY : src/RedisConPool.i
+
+# target to preprocess a source file
+src/RedisConPool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/RedisConPool.cpp.i
+.PHONY : src/RedisConPool.cpp.i
+
+src/RedisConPool.s: src/RedisConPool.cpp.s
+.PHONY : src/RedisConPool.s
+
+# target to generate assembly for a file
+src/RedisConPool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/RedisConPool.cpp.s
+.PHONY : src/RedisConPool.cpp.s
+
 src/RedisMgr.obj: src/RedisMgr.cpp.obj
 .PHONY : src/RedisMgr.obj
 
@@ -415,6 +439,9 @@ help:
 	@echo ... src/LogicSystem.obj
 	@echo ... src/LogicSystem.i
 	@echo ... src/LogicSystem.s
+	@echo ... src/RedisConPool.obj
+	@echo ... src/RedisConPool.i
+	@echo ... src/RedisConPool.s
 	@echo ... src/RedisMgr.obj
 	@echo ... src/RedisMgr.i
 	@echo ... src/RedisMgr.s
