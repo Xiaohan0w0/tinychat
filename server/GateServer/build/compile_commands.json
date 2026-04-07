@@ -37,6 +37,12 @@
 },
 {
   "directory": "E:/cpp_project/TinyChat/server/GateServer/build",
+  "command": "E:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe  @CMakeFiles/GateServer.dir/includes_CXX.rsp -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++20 -o CMakeFiles\\GateServer.dir\\src\\RedisMgr.cpp.obj -c E:\\cpp_project\\TinyChat\\server\\GateServer\\src\\RedisMgr.cpp",
+  "file": "E:/cpp_project/TinyChat/server/GateServer/src/RedisMgr.cpp",
+  "output": "CMakeFiles/GateServer.dir/src/RedisMgr.cpp.obj"
+},
+{
+  "directory": "E:/cpp_project/TinyChat/server/GateServer/build",
   "command": "E:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe  @CMakeFiles/GateServer.dir/includes_CXX.rsp -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++20 -o CMakeFiles\\GateServer.dir\\src\\VerifyGrpcClient.cpp.obj -c E:\\cpp_project\\TinyChat\\server\\GateServer\\src\\VerifyGrpcClient.cpp",
   "file": "E:/cpp_project/TinyChat/server/GateServer/src/VerifyGrpcClient.cpp",
   "output": "CMakeFiles/GateServer.dir/src/VerifyGrpcClient.cpp.obj"

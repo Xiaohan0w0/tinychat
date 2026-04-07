@@ -19,6 +19,7 @@
 #include <atomic>
 #include <condition_variable>
 #include <hiredis.h>
+#include <cassert>
 
 
 

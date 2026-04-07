@@ -7,8 +7,8 @@
                 "${workspaceFolder}/include",
                 "E:/cppsoft/boost_1_90_0/installed/include/boost-1_90",
                 "E:/cppsoft/jsoncpp-1.9.7/installed/include",
-                "E:/cppsoft/grpc_v1.50/installed/include"
-
+                "E:/cppsoft/grpc_v1.50/installed/include",
+                "E:/cppsoft/hiredis-master"
             ],
             "defines": [
                 "_DEBUG",

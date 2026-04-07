@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/GateServer.dir/src/HttpConnection.cpp.obj.d"
   "CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj"
   "CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj.d"
+  "CMakeFiles/GateServer.dir/src/RedisMgr.cpp.obj"
+  "CMakeFiles/GateServer.dir/src/RedisMgr.cpp.obj.d"
   "CMakeFiles/GateServer.dir/src/VerifyGrpcClient.cpp.obj"
   "CMakeFiles/GateServer.dir/src/VerifyGrpcClient.cpp.obj.d"
   "E:/cpp_project/TinyChat/server/GateServer/bin/GateServer.exe"

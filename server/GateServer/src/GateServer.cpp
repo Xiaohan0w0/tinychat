@@ -1,9 +1,7 @@
-#include <iostream>
-#include <json/json.h>
-#include <json/value.h>
-#include <json/reader.h>
 #include "ConfigMgr.h"
 #include "CServer.h"
+#include "RedisMgr.h"
+#include "Const.h"
 
 void TestRedis()
 {
@@ -111,9 +109,35 @@ void TestRedis()
     redisFree(c);
 }
 
+void TestRedisMgr()
+{
+    assert(RedisMgr::GetInstance()->Connect("127.0.0.1", 6380));
+    assert(RedisMgr::GetInstance()->Auth("123456"));
+    assert(RedisMgr::GetInstance()->Set("blogwebsite", "llfc.club"));
+    std::string value = "";
+    assert(RedisMgr::GetInstance()->Get("blogwebsite", value));
+    assert(RedisMgr::GetInstance()->Get("nonekey", value) == false);
+    assert(RedisMgr::GetInstance()->HSet("bloginfo", "blogwebsite", "llfc.club"));
+    assert(RedisMgr::GetInstance()->HGet("bloginfo", "blogwebsite") != "");
+    assert(RedisMgr::GetInstance()->ExistsKey("bloginfo"));
+    assert(RedisMgr::GetInstance()->Del("bloginfo"));
+    assert(RedisMgr::GetInstance()->Del("bloginfo"));
+    assert(RedisMgr::GetInstance()->ExistsKey("bloginfo") == false);
+    assert(RedisMgr::GetInstance()->LPush("lpushkey1", "lpushvalue1"));
+    assert(RedisMgr::GetInstance()->LPush("lpushkey1", "lpushvalue2"));
+    assert(RedisMgr::GetInstance()->LPush("lpushkey1", "lpushvalue3"));
+    assert(RedisMgr::GetInstance()->RPop("lpushkey1", value));
+    assert(RedisMgr::GetInstance()->RPop("lpushkey1", value));
+    assert(RedisMgr::GetInstance()->LPop("lpushkey1", value));
+    assert(RedisMgr::GetInstance()->LPop("lpushkey2", value) == false);
+    RedisMgr::GetInstance()->Close();
+}
+
 int main()
 {
-    TestRedis();
+    // TestRedis();
+    TestRedisMgr();
+
     // 获取 ConfigMgr 实例
     ConfigMgr& gCfgMgr = ConfigMgr::GetInstance();
     // 从配置文件中获取 GateServer 端口

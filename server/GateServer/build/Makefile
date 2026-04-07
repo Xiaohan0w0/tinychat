@@ -333,6 +333,30 @@ src/LogicSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/LogicSystem.cpp.s
 .PHONY : src/LogicSystem.cpp.s
 
+src/RedisMgr.obj: src/RedisMgr.cpp.obj
+.PHONY : src/RedisMgr.obj
+
+# target to build an object file
+src/RedisMgr.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/RedisMgr.cpp.obj
+.PHONY : src/RedisMgr.cpp.obj
+
+src/RedisMgr.i: src/RedisMgr.cpp.i
+.PHONY : src/RedisMgr.i
+
+# target to preprocess a source file
+src/RedisMgr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/RedisMgr.cpp.i
+.PHONY : src/RedisMgr.cpp.i
+
+src/RedisMgr.s: src/RedisMgr.cpp.s
+.PHONY : src/RedisMgr.s
+
+# target to generate assembly for a file
+src/RedisMgr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GateServer.dir\build.make CMakeFiles/GateServer.dir/src/RedisMgr.cpp.s
+.PHONY : src/RedisMgr.cpp.s
+
 src/VerifyGrpcClient.obj: src/VerifyGrpcClient.cpp.obj
 .PHONY : src/VerifyGrpcClient.obj
 
@@ -391,6 +415,9 @@ help:
 	@echo ... src/LogicSystem.obj
 	@echo ... src/LogicSystem.i
 	@echo ... src/LogicSystem.s
+	@echo ... src/RedisMgr.obj
+	@echo ... src/RedisMgr.i
+	@echo ... src/RedisMgr.s
 	@echo ... src/VerifyGrpcClient.obj
 	@echo ... src/VerifyGrpcClient.i
 	@echo ... src/VerifyGrpcClient.s
