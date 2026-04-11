@@ -134,7 +134,7 @@ void TestRedisMgr()
 int main()
 {
     // TestRedis();
-    TestRedisMgr();
+    // TestRedisMgr();
 
     // 获取 ConfigMgr 实例
     ConfigMgr& gCfgMgr = ConfigMgr::GetInstance();

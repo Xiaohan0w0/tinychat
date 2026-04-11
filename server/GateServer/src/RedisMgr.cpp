@@ -411,19 +411,19 @@ bool RedisMgr::ExistsKey(const std::string &key)
     auto reply = (redisReply *)redisCommand(connect, "exists %s", key.c_str());
     if (reply == nullptr)
     {
-        std::cout << "Not Found [ Key " << key << " ]  ! " << std::endl;
+        std::cout << "[ Key " << key << " ] does not exist" << std::endl;
         _con_pool->returnConnection(connect);
         return false;
     }
 
     if (reply->type != REDIS_REPLY_INTEGER || reply->integer == 0)
     {
-        std::cout << "Not Found [ Key " << key << " ]  ! " << std::endl;
+        std::cout << "[ Key " << key << " ] does not exist" << std::endl;
         _con_pool->returnConnection(connect);
         freeReplyObject(reply);
         return false;
     }
-    std::cout << " Found [ Key " << key << " ] exists ! " << std::endl;
+    std::cout << "[ Key " << key << " ] exists" << std::endl;
     freeReplyObject(reply);
     _con_pool->returnConnection(connect);
     return true;

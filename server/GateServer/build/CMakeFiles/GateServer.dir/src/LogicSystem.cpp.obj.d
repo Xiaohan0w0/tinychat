@@ -2344,4 +2344,6 @@ CMakeFiles/GateServer.dir/src/LogicSystem.cpp.obj: \
  E:/cppsoft/grpc_v1.50/installed/include/google/protobuf/util/type_resolver_util.h \
  E:/cppsoft/grpc_v1.50/installed/include/grpcpp/impl/codegen/proto_buffer_reader.h \
  E:/cppsoft/grpc_v1.50/installed/include/grpcpp/impl/codegen/proto_buffer_writer.h \
- E:/cppsoft/grpc_v1.50/installed/include/grpcpp/impl/codegen/stub_options.h
+ E:/cppsoft/grpc_v1.50/installed/include/grpcpp/impl/codegen/stub_options.h \
+ E:/cpp_project/TinyChat/server/GateServer/include/RedisMgr.h \
+ E:/cpp_project/TinyChat/server/GateServer/include/RedisConPool.h
